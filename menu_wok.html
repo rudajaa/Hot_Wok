@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>HotWok Вок меню</title>
+
+ <!--bootstrap-->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+crossorigin="anonymous">
+
+<!--font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+
+<!--connect css-->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+ </head>
+ <body>
+  <style>
+    body {
+      background-image: url('Photo/bg1.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-attachment: fixed;
+    }
+    
+    .font1 {
+      font-family: 'Lobster', cursive;
+      font-size: 30px;
+      color: white;
+    }
+    
+    .font2 {
+      font-family: 'Montserrat Alternates', sans-serif;
+      font-size: 14px;
+      line-height: 1.2;
+    }
+    
+    .my-text {
+      color: white;
+      text-shadow: -1px 0 rgb(168, 37, 37), 0 1px rgb(168, 37, 37), 1px 0 rgb(168, 37, 37), 0 -1px rgb(168, 37, 37);
+      display: inline-block;
+      border: 1px solid rgb(168, 37, 37);
+      padding: 5px;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+      box-sizing: border-box;
+      background-color: rgb(168, 37, 37);
+      margin-top: 40px;
+    }
+    
+    .column-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    
+    .column1 {
+      flex-basis: 35%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 7px solid rgb(168, 37, 37);
+      border-radius: 25px;
+      margin-top: 40px;
+      color: white;
+      font-size: 22px;
+      height: 225px;
+      text-align: center;
+      margin-left: 45px;
+    }
+    
+    .column2 {
+      flex-basis: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 7px solid rgb(168, 37, 37);
+      border-radius: 25px;
+      margin-top: 40px;
+      color: white;
+      font-size: 22px;
+      height: 225px;
+      text-align: center;
+      margin-right: 45px;
+    }
+    
+    .image-wrapper {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    
+    .image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .gray-background {
+      background-color: rgba(192, 192, 192, 0.21); 
+      height: 225px;
+    }
+    
+    .text {
+      margin-top: 25px; 
+    }
+    
+    .row-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .column {
+      flex-basis: 23%;
+      margin-top: 20px;
+      color: white;
+    }
+    
+    .col-md-3 h2 {
+      background-color: rgba(192, 192, 192, 0.21);
+      border: 3px solid rgb(168, 37, 37);
+      padding: 5px;
+      border-radius: 15px;
+      font-size: 18px;
+      text-align: center;
+      color: white;
+      margin-top: 35px;
+      width: 80%;
+      height: 17%;
+      padding-top: 10px;
+    }
+    
+    .col-md-3 p {
+      color: white;
+      max-width: 250px;
+    }
+    
+    button {
+      color: white;
+      background-color: rgb(168, 37, 37);
+      border: 3px solid rgb(168, 37, 37);
+      border-radius: 10px;
+      height: 35px;
+      padding: 0;
+
+    }
+    
+    .price {
+      background-color: white;
+      border: 3px solid white;
+      border-radius: 10px;
+      height: 35px;
+      text-align: center;
+      margin-right: 100px;
+      padding-top: 7px;
+      font-weight: 650;
+    }
+.breadcrumb {
+  display: flex;
+  justify-content: center; /* Додаємо цей рядок для центрування */
+  align-items: center; /* Додаємо цей рядок для центрування */
+  margin-left: 1350px ;
+  background-color: rgba(192, 192, 192, 0.21);
+  border: 3px solid rgb(168, 37, 37);
+  border: 3px solid rgb(168, 37, 37);
+  border-radius: 10px;
+   max-width: 100px;
+}
+
+.breadcrumb-item {
+  text-align: center; /* Додаємо цей рядок для центрування */
+}
+
+.breadcrumb a{
+  display: inline-block; /* Додаємо цей рядок для центрування */
+  padding: 5px 10px;
+}
+  </style>
+  
+  <div class="text-center">
+    <img src="Photo/logostandart-no-bg 1.png" alt="logo_black" width="125" height="140">
+  </div>
+  
+  <ul class="nav nav-tabs justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active font2" aria-current="page" href="main_page.html">Головна сторінка</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle font2" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Меню</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item font2" href="menu_sets.html">Сети</a></li>
+        <li><a class="dropdown-item font2" href="menu_rolls.html">Ролли та макі</a></li>
+        <li><a class="dropdown-item font2" href="menu_hot_rolls.html">Гарячі ролли</a></li> 
+        <li><a class="dropdown-item font2" href="menu_wok.html">Вок меню(рис, локшина)</a></li>
+        <li><a class="dropdown-item font2" href="menu_soups_snack.html">Супи та закуски</a></li>
+        <li><a class="dropdown-item font2" href="menu_sushi_burgers.html">Суші-бургери, Фірмовий Ролл</a></li> 
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link font2" href="sales.html">Акції</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link font2" href="delivery.html">Доставка</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link font2" href="about.html">Про нас</a>
+    </li>
+  </ul>
+  
+  <!--Фунчоза-->
+  <h1 class="my-text font1">Фунчоза</h1>
+  
+  <div class="column-container">
+    <div class="column1">
+      <div class="image-wrapper">
+        <img src="Photo/rice_noodles_wok/funchose_beef_cut.jpg" alt="funchose_beef">
+      </div>
+    </div>
+    <div class="column2 gray-background font2">
+      <p class="text">Локшина фунчоза - це азіатська страва,
+        в якій використовуються прозорі вермішелі з крохмалю бобів мунг. 
+        Локшина фунчоза зазвичай має ніжну текстуру і нейтральний смак,
+        який доповнюється іншими інгрідієнтами ma соусами, що додають смакові нюанси.</p>
+    </div>
+  </div>
+  
+  <div class="container font2">
+    <div class="row">
+      <div class="col-md-3">
+        <h2>З морепродуктами</h2>
+        <p>Склад: Морква, перець болгарський, цибуля, імбир, часник, соус устричний, спаржа, креветки, кунжут, зелена цибуля.</p>
+        <p>Вихід: 350г</p>
+        <div class="row-container">
+          <button class="add-to-cart-button">Додати в кошик</button>
+          <p class="price" style="color: black;">190грн</p>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <h2>З креветками</h2>
+        <p>Склад: Морква, перець болгарський, цибуля, імбир, часник, соус устричний, спаржа, креветки, кунжут, зелена цибуля.</p>
+        <p>Вихід: 320г</p>
+        <div class="row-container">
+          <button>Додати в кошик</button>
+          <p class="price" style="color: black;">180грн</p>
+        </div>
+      </div>
+  
+      <div class="col-md-3">  
+        <h2>Зі свининою</h2>
+        <p>Склад: Свинина, цибуля, морква, перець болгарський, імбир, часник, соус устричний, кунжут, зелена цибуля.</p>
+        <p style="margin-top: 32px;">Вихід: 320г</p>
+        <div class="row-container">
+          <button style="margin-bottom: 15px;">Додати в кошик</button>
+          <p class="price" style="color: black;">160грн</p>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <h2>З яловичиною</h2>
+        <p>Склад: Цибуля, перець болгарський, огірок, імбир, часник, теріякі соус, спаржа, кунжут, зелена цибуля, сушений пікантний перець.</p>
+        <p>Вихід: 320г</p>
+        <div class="row-container">
+          <button>Додати в кошик</button>
+          <p class="price" style="color: black;">170грн</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container font2">
+    <div class="row">
+      <div class="col-md-3">
+        <h2>З куркою</h2>
+        <p>Склад: Курочка, цибуля, морква, перець болгарський, імбир, часник, соус теріякі, кунжут, зелена цибуля.</p>
+        <p>Вихід: 320г</p>
+        <div class="row-container">
+          <button>Додати в кошик</button>
+          <p class="price" style="color: black;">145грн</p>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <h2>З овочами</h2>
+        <p>Склад: Цибуля, морква, перець болгарський, імбир, часник, соус теріякі, спаржа, кунжут, зелена цибуля.</p>
+        <p>Вихід: 310г</p>
+        <div class="row-container">
+          <button>Додати в кошик</button>
+          <p class="price" style="color: black;">125грн</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--Рамен-->
+  <h1 class="my-text font1">Рамен</h1>
+  
+  <div class="column-container">
+    <div class="column1">
+      <div class="image-wrapper">
+        <img src="Photo/rice_noodles_wok/ramen_cut.jpg" alt="ramen_cut">
+      </div>
+    </div>
+    <div class="column2 gray-background font2">
+      <p class="text">Локшина рамен славиться своїм інтенсивним, багатошаровим смаковим профілем.
+         Мʼякі нудлі, занурені у смачний соус, створюють гармонійне поєднання
+        текстур. Ця страва часто подається з
+        різними додатками, які можна налаштувати під власний смак.</p>
+    </div>
+  </div>
+  
+  <div class="container font2">
+    <div class="row">
+      <div class="col-md-3">
+        <h2>З морепродуктами</h2>
+        <p>Склад: Перець болгарський, цибуля, манго, імбир, часник, соус устричний, спаржа, креветки, мідії, кальмар, кунжут, зелена цибуля.</p>
+        <p>Вихід: 350г</p>
+        <div class="row-container">
+          <button>Додати в кошик</button>
+          <p class="price" style="color: black;">190грн</p>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <h2>З креветками</h2>
+        <p>Склад: Морква, перець болгарський, цибуля, імбир, часник, соус устричний, спаржа, креветки, кунжут, зелена цибуля.</p>
+        <p>Вихід: 330г</p>
+        <div class="row-container">
+          <button>Додати в кошик</button>
+          <p class="price" style="color: black;">180грн</p>
+        </div>
+      </div>
+  
+      <div class="col-md-3">  
+        <h2>Зі свининою</h2>
+        <p>Склад: Свинина, цибуля, морква, перець болгарський, імбир, часник,спаржа, соус теріякі, кунжут, зелена цибуля.</p>
+        <p style="margin-top: 32px;">Вихід: 330г</p>
+        <div class="row-container">
+          <button style="margin-bottom: 15px;">Додати в кошик</button>
+          <p class="price" style="color: black;">160грн</p>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <h2>З яловичиною</h2>
+        <p>Склад: Цибуля, перець болгарський, огірок, імбир, часник, теріякі соус, спаржа, кунжут, зелена цибуля, сушений пікантний перець.</p>
+        <p>Вихід: 330г</p>
+        <div class="row-container">
+          <button>Додати в кошик</button>
+          <p class="price" style="color: black;">170грн</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container font2">
+    <div class="row">
+      <div class="col-md-3">
+        <h2>З куркою</h2>
+        <p>Склад: Курочка, цибуля, морква, перець болгарський, імбир, часник, спаржа, соус теріякі, кунжут, зелена цибуля.</p>
+        <p>Вихід: 330г</p>
+        <div class="row-container">
+          <button>Додати в кошик</button>
+          <p class="price" style="color: black;">145грн</p>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <h2>З овочами</h2>
+        <p>Склад: Цибуля, морква, перець болгарський, імбир, часник, соус теріякі, спаржа, кунжут, зелена цибуля.</p>
+        <p>Вихід: 320г</p>
+        <div class="row-container">
+          <button>Додати в кошик</button>
+          <p class="price" style="color: black;">125грн</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <!--Соба-->
+        <h1 class="my-text font1">Соба</h1>
+
+<div class="column-container">
+  <div class="column1">
+    <div class="image-wrapper">
+      <img src="Photo/rice_noodles_wok/soba.jpg" alt="soba">
+    </div>
+  </div>
+  <div class="column2 gray-background font2">
+    <p class="text">Основний компонент локшини соба - це самі нудлі, які зазвичай варяться або замочуються в гарячій воді до мʼякості, після
+      чого занурюються у ароматний соус.
+      Вона є ситною, але не важкою, і часто ї вважають хорошим варіантом для теплих літніх днів.</p>
+  </div>
+</div>
+
+<div class="container font2">
+  <div class="row">
+    <div class="col-md-3">
+      <h2>З морепродуктами</h2>
+      <p>Склад: Перець болгарський, цибуля, манго, імбир, часник, соус устричний, спаржа, креветки, мідії, кальмар, кунжут, зелена цибуля. </p>
+      <p>Вихід: 350г</p>
+      <div class="row-container">
+        <button>Додати в кошик</button>
+        <p class="price" style="color: black;">190грн</p>
+        <!--
+      <div class="marks">
+         <img src="Photo/hot_seafood_pict/octopus.png" alt="octopus"> 
+        </div>
+        -->
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <h2>З креветками</h2>
+      <p>Склад: Морква, перець болгарський, цибуля, імбир, часник, соус устричний, спаржа, креветки, кунжут, зелена цибуля.</p>
+      <p>Вихід: 330г</p>
+      <div class="row-container">
+        <button>Додати в кошик</button>
+        <p class="price" style="color: black;">180рн</p>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <h2>Зі свининою</h2>
+      <p>Склад: Свинина, цибуля, морква, перець болгарський, імбир, часник, соус фірмовий, кунжут, зелена цибуля.</p>
+      <p style="margin-top: 35px;">Вихід: 330г</p>
+      <div class="row-container">
+        <button style="margin-bottom: 15px;">Додати в кошик</button>
+        <p class="price" style="color: black;">160грн</p>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <h2>З куркою</h2>
+      <p>Склад: Курочка, цибуля, морква, перець болгарський, імбир, часник, соус фірмовий, кунжут, зелена цибуля.</p>
+      <p style="margin-top: 35px;">Вихід: 330г</p>
+      <div class="row-container">
+        <button style="margin-bottom: 15px;">Додати в кошик</button>
+        <p class="price" style="color: black;">145грн</p>
+      </div>
+    </div>
+
+    <div class="row">
+    <div class="col-md-3">
+      <h2>З овочами</h2>
+      <p>Склад: Цибуля, морква, перець болгарський, імбир, часник, соус фірмовий, спаржа, кунжут, зелена цибуля. </p>
+      <p>Вихід: 310г</p>
+      <div class="row-container">
+        <button>Додати в кошик</button>
+        <p class="price" style="color: black;">125грн</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--Удон-->
+<h1 class="my-text font1">Удон</h1>
+  
+  <div class="column-container">
+    <div class="column1">
+      <div class="image-wrapper">
+        <img src="Photo/rice_noodles_wok/udon_cut.jpg" alt="udon_cut">
+      </div>
+    </div>
+    <div class="column2 gray-background font2">
+      <p class="text" style="margin-top: 20px;">Удон - це популярна японська страва, яка
+        базується на широких, житніх або пшеничних нудлях. Удон відомий своєю ситністю і 
+        часто вважається важчим в порівнянні з іншими японськими нудлями.
+        Він є відмінним варіантом для холодних зимових або спекотних літніх днів.</p>
+    </div>
+  </div>
+  
+  <div class="container font2">
+    <div class="row">
+      <div class="col-md-3">
+        <h2>З морепродуктами</h2>
+        <p>Склад: Перець болгарський, цибуля, манго, імбир, часник, соус устричний, спаржа, креветки, мідії, кальмар, кунжут, зелена цибуля.</p>
+        <p>Вихід: 350г</p>
+        <div class="row-container">
+          <button>Додати в кошик</button>
+          <p class="price" style="color: black;">190грн</p>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <h2>З креветками</h2>
+        <p>Склад: Морква, перець болгарський, цибуля, імбир, часник, соус устричний, спаржа, креветки, кунжут, зелена цибуля.</p>
+        <p>Вихід: 330г</p>
+        <div class="row-container">
+          <button>Додати в кошик</button>
+          <p class="price" style="color: black;">180грн</p>
+        </div>
+      </div>
+  
+      <div class="col-md-3">  
+        <h2>Зі свининою</h2>
+        <p>Склад: Свинина, цибуля, морква, перець болгарський, імбир, часник, капуста кім чи, соус фірмовий, кунжут, зелена цибуля.</p>
+        <p>Вихід: 330г</p>
+        <div class="row-container">
+          <button>Додати в кошик</button>
+          <p class="price" style="color: black;">160грн</p>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <h2>З яловичиною</h2>
+        <p>Склад: Цибуля, перець болгарський, огірок, імбир, часник, теріякі соус, спаржа, кунжут, зелена цибуля, сушений пікантний перець.</p>
+        <p>Вихід: 330г</p>
+        <div class="row-container">
+          <button>Додати в кошик</button>
+          <p class="price" style="color: black;">170грн</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container font2">
+    <div class="row">
+      <div class="col-md-3">
+        <h2>З куркою</h2>
+        <p>Склад: Курочка, цибуля, морква, перець болгарський, імбир, часник, капуста кім чи, соус фірмовий, кунжут, зелена цибуля.</p>
+        <p>Вихід: 330г</p>
+        <div class="row-container">
+          <button>Додати в кошик</button>
+          <p class="price" style="color: black;">145грн</p>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <h2>З овочами</h2>
+        <p>Склад: Цибуля, морква, перець болгарський, імбир, часник, соус фірмовий, капуста кім чи, кунжут, зелена цибуля.</p>
+        <p style="margin-top: 32px;">Вихід: 310г</p>
+        <div class="row-container">
+          <button style="margin-bottom: 15px;">Додати в кошик</button>
+          <p class="price" style="color: black;">125грн</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Рис-->
+<h1 class="my-text font1">Рис</h1>
+  
+  <div class="column-container">
+    <div class="column1">
+      <div class="image-wrapper">
+        <img src="Photo/rice_noodles_wok/rice_cut1.jpg" alt="rice_cut">
+      </div>
+    </div>
+    <div class="column2 gray-background font2">
+      <p class="text" style="margin-top: 40px;">Вок з рисом - це ароматна і смачна страва, 
+        що поєднує в собі свіжі овочі та/або м'ясо,  соуси та ніжний рис.
+         Вона має свої корені в азійській кухні і завойовує серця гурманів своїм неповторним смаком і привабливим виглядом.</p>
+    </div>
+  </div>
+  
+  <div class="container font2">
+    <div class="row">
+      <div class="col-md-3">
+        <h2>З креветками</h2>
+        <p>Склад: Морква, перець болгарський, цибуля, імбир, часник, соус устричний, спаржа, креветки, кунжут, зелена цибуля.</p>
+        <p>Вихід: 330г</p>
+        <div class="row-container">
+          <button>Додати в кошик</button>
+          <p class="price" style="color: black;">180грн</p>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <h2>Зі свининою</h2>
+        <p>Склад: Рис, цибуля, морква, перець болгарський, імбир, часник, спаржа, соус фірмовий, свинина, кунжут, зелена цибуля.</p>
+        <p>Вихід: 320г</p>
+        <div class="row-container">
+          <button>Додати в кошик</button>
+          <p class="price" style="color: black;">160грн</p>
+        </div>
+      </div>
+  
+      <div class="col-md-3">  
+        <h2>З куркою</h2>
+        <p>Склад: Рис, курочка, цибуля, морква, перець болгарський, імбир, часник, спаржа, соус фірмовий, кунжут, зелена цибуля.</p>
+        <p>Вихід: 320г</p>
+        <div class="row-container">
+          <button>Додати в кошик</button>
+          <p class="price" style="color: black;">145грн</p>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <h2>З овочами</h2>
+        <p>Склад: Рис, цибуля, морква, перець болгарський, імбир, часник, соус фірмовий, спаржа, гриби печериці, кунжут, зелена цибуля.</p>
+        <p>Вихід: 320г</p>
+        <div class="row-container">
+          <button>Додати в кошик</button>
+          <p class="price" style="color: black;">125грн</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Вок по-китайськи з рисом-->
+<h1 class="my-text font1">Вок по-китайськи з рисом</h1>
+  
+  <div class="column-container">
+    <div class="column1">
+      <div class="image-wrapper">
+        <img src="Photo/rice_noodles_wok/wok_chineese_cut.jpg" alt="wok_chineese_cut">
+      </div>
+    </div>
+    <div class="column2 gray-background font2">
+      <p class="text" style="margin-top: 25px;">Вок по-китайськи з рисом - це неймовірно апетитна та смачна страва, яка поєднує в собі багато складників та ароматів. Це класична китайська страва, яка стала популярною у всьому світі завдяки своїй неповторній смаковій гармонії.</p>
+    </div>
+  </div>
+  
+  <div class="container font2">
+    <div class="row">
+      <div class="col-md-3">
+        <h2>З куркою</h2>
+        <p>Склад: Рис, цибуля, морква, перець болгарський, імбир, часник, соус кисло-солодкий, спаржа, капуста кім чи, курочка, зелена цибуля, кунжут</p>
+        <p style="margin-top: 35px;">Вихід: 350г</p>
+        <div class="row-container">
+          <button>Додати в кошик</button>
+          <p class="price" style="color: black;">150грн</p>
+        </div>
+      </div>
+  
+      <div class="col-md-3">
+        <h2>Зі свининою</h2>
+        <p>Склад: Рис, цибуля, морква, перець болгарський, імбир, часник, спаржа, соус кисло-солодкий, капуста кім чи, свинина, кунжут, зелена цибуля.</p>
+        <p>Вихід: 350г</p>
+        <div class="row-container">
+          <button>Додати в кошик</button>
+          <p class="price" style="color: black;">160грн</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  Breadcrumb  -->
+ 
+  
+   <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+    <li class="breadcrumb-item "><a href="#">Вгору</a></li>
+    </ol>
+   </nav>
+
+ 
+      </body> 
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+crossorigin="anonymous"></script>
+
+ </body>
+
+</html>

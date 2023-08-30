@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Доставка</title>
+
+<!--font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+
+<!--bootstrap-->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+crossorigin="anonymous">
+
+<!--connect css-->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+crossorigin="anonymous">
+
+ </head>
+
+ <body>
+  <style>
+  body {
+    background-image: url('Photo/bg1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+   
+    
+}
+
+.font1 {
+font-family: 'Lobster', cursive;
+font-size:larger;
+ color: white;
+ }
+ .font2 {
+  font-family: 'Montserrat Alternates', sans-serif;
+ font-size: 14px;
+ line-height: 1.2; /* Зменшуємо простір між строчками */
+
+ }
+
+ 
+.custom-border{
+  display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid rgb(168, 37, 37);
+    border-radius: 10px;
+    background-color: rgb(168, 37, 37);
+}
+  .custom-border h1 {
+    color: white;
+    font-weight: lighter;
+  }
+  
+  .column-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 40px; 
+
+}
+
+.column {
+  width: 30%;
+  border: 7px solid rgb(168, 37, 37);
+  background-color: rgba(192, 192, 192, 0.21);
+  color: white;
+  padding: 10px;
+  border-radius: 40px;
+  margin-right: 5%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.column img {
+  margin-bottom: 30px; 
+}
+.column:first-child {
+  margin-left: 40px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.custom-text {
+  font-size: 20px;
+}
+</style>
+
+<div class="text-center"> <img src="Photo/logostandart-no-bg 1.png" alt="logo_black" width="125" height="140"></div>
+
+   <!--menu-->
+<ul class="nav nav-tabs justify-content-center">
+  <li class="nav-item">
+      <a class="nav-link active font2" aria-current="page" href="main_page.html">Головна сторінка</a>
+  </li>
+  <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle font2" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Меню</a>
+      <ul class="dropdown-menu">
+          <li><a class="dropdown-item font2" href="menu_sets.html">Сети</a></li>
+          <li><a class="dropdown-item font2" href="menu_rolls.html">Ролли та макі</a></li>
+          <li><a class="dropdown-item font2" href="menu_hot_rolls.html">Гарячі ролли</a></li> 
+          <li><a class="dropdown-item font2" href="menu_wok.html">Вок меню(рис, локшина)</a></li>
+          <li><a class="dropdown-item font2" href="menu_soups_snack.html">Супи та закуски</a></li>
+          <li><a class="dropdown-item font2" href="menu_sushi_burgers.html">Суші-бургери, Фірмовий Ролл</a></li> 
+      </ul>
+  </li>
+<!--other pages-->
+  <li class="nav-item">
+      <a class="nav-link font2" href="sales.html">Акції</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link font2" href="delivery.html">Доставка</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link font2" href="about.html">Про нас</a>
+  </li>
+</ul>
+</nav>
+
+<div class="row text-center">
+  <h1 class="text-xxl-center font1">
+    <span class="custom-border" style="margin: 0 auto; float: none; margin-top: 20px;">Доставка</span>
+  </h1>
+</div>
+
+
+<div class="column-container">
+  <div class="column ">
+    <div class="font1">
+    <h2>Кур'єр:</h2>
+  </div>
+  <div class="font2">
+    <p>Від 350грн- доставка безкоштовна</p>
+    <img src="Photo/car-img.png" alt="car" />
+    <p style="margin-top: 35px;">Менше 350грн- доставка 50 грн</p>
+  </div>
+</div>
+  <div class="column">
+    <div class="font1">
+    <h2>Самовивіз:</h2>
+  </div>
+  <div class="font2">
+    <p>Бульвар Свободи 104</p>
+  </div>
+    <img src="Photo/hotwok-work-place.png" alt="hotwok-work-place" />
+  </div>
+</div>
+<div class="clearfix"></div>
+
+<div class="row text-center">
+  <h1 class="text-xxl-center font1">
+    <span class="custom-border" style="margin: 0 auto; float: none; margin-top: 20px;">
+      <span class="custom-text" style="display: inline-block; vertical-align: top; margin-top: 10px;">
+        Хочеться смачненького просто зараз?
+        Ми готуємо найсмачніші страви за оригінальними рецептами. Обирайте та насолоджуйтеся!
+      </span>
+    </span>
+  </h1>
+</div>
+     
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+crossorigin="anonymous"></script>
+
+
+ </body>
+</html>
