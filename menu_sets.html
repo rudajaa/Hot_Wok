@@ -4,7 +4,7 @@
  <head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>HotWok Сети</title>
+ <title>Hot Wok Сети</title>
 
  <!--bootstrap-->
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
@@ -28,89 +28,10 @@ crossorigin="anonymous">
  <body>
 
   <style>
-     body {
-      background-image: url('Photo/bg1.png');
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      background-attachment: fixed;
-    }
     
-    .font1 {
-      font-family: 'Lobster', cursive;
-      font-size: 30px;
-      color: white;
-    }
-    
-    .font2 {
-      font-family: 'Montserrat Alternates', sans-serif;
-      font-size: 14px;
-      line-height: 1.2;
-     flex-direction: column;
-    }
+
     /*menu */
-    .my-text {
-      color: white;
-      text-shadow: -1px 0 rgb(168, 37, 37), 0 1px rgb(168, 37, 37), 1px 0 rgb(168, 37, 37), 0 -1px rgb(168, 37, 37);
-      display: inline-block;
-      border: 1px solid rgb(168, 37, 37);
-      padding: 5px;
-      margin: 0;
-      width: 100%;
-      text-align: center;
-      box-sizing: border-box;
-      background-color: rgb(168, 37, 37);
-      margin-top: 40px;
-    }
-    .menu-item {
-    position: relative;
-    overflow: hidden;
-    margin-top: 20px;
-    display: flex;
-    align-items: flex-start; /* Змінюємо align-items на flex-start */
-
-        
-  }
-
-  .menu-item img {
-    max-width: 45%;
-    height: auto;
-    display: block;
-    border: 3px solid rgb(168, 37, 37);
-    border-radius: 10px;
-    flex-shrink: 0;
-    object-fit: cover;
-  }
-
-  .menu-item-text {
-    margin-left: 10px;
-    color: white; 
-  top: 0; /* Вирівняємо текст по верхній межі .menu-item */
-  min-width: 50%; /* Мінімальна ширина блоку, щоб не "перекривати" картинку */
-  display: flex; /* Додали flex для гнучкого контейнера */
-  flex-direction: column; /* Відображати дочірні елементи вертикально */
-  flex: 1; /* Змінюємо flex на 1 для розтягування на всю доступну ширину */
-  padding-bottom: 15px;  
-  position: relative;
-  
-  }
-  .menu-item-text h4 {
-  flex: 1;
-  border: 3px solid rgb(168, 37, 37);
-  border-radius: 10px;
-  background-color: rgba(192, 192, 192, 0.21);
-  font-size: 17px;
-  text-align: center;
-  margin: 0;
-  padding: 0 0; /* Додали внутрішні відступи для h4 */
-}
-
-
-.menu-item-text ul {
-  flex-wrap: wrap;
-  margin: 0; /* Додали внутрішні відступи для ul */
-
-}
-
+    
 .menu-item-text li {
   font-size: 13px;
   margin: 3px 0; /* Змінюємо margin для li */
@@ -121,57 +42,11 @@ crossorigin="anonymous">
   top: 170px; 
   left: 18px;
   z-index: 1;
-  font-size: 13px;
+  font-size: 12px;
+  
 }
-
-  /*button and price */
-
 
   
-  .menu-item {
-  position: relative;
-  display: flex;
-}
-.row {
-    display: flex;
-    flex-wrap: wrap; /* Додаємо flex-wrap для рівномірного розподілу */
-    
-  }
-
-  .price-button-container {
-  display: flex;
-  align-items: center; /* Вирівнювання по вертикалі */
-  justify-content: center; /* Вирівнювання по горизонталі */
-}
-
-
-
-.price-button-container {
-  display: flex;
-
-}
-
-
-.price-button-container button {
-  color: white;
-  background-color: rgb(168, 37, 37);
-  border: 3px solid rgb(168, 37, 37);
-  border-radius: 10px;
-  height: 30px;
-
-}
-
-.price {
-  background-color: white;
-  border: 3px solid white;
-  border-radius: 10px;
-  font-weight: 650;
-  padding: 5px 10px;
-  margin: 0; /* Забрати зовнішній відступ, щоб ціна не займала додатковий простір */
-  height: 30px;
-  line-height: 1;
-  text-align: center;
-}
   </style>
 
  <div class="text-center">
@@ -191,6 +66,7 @@ crossorigin="anonymous">
       <li><a class="dropdown-item font2" href="menu_wok.html">Вок меню(рис, локшина)</a></li>
       <li><a class="dropdown-item font2" href="menu_soups_snack.html">Супи та закуски</a></li>
       <li><a class="dropdown-item font2" href="menu_sushi_burgers.html">Суші-бургери, Фірмовий Ролл</a></li> 
+      <li><a class="dropdown-item font2" href="menu_poke_bowl_bao.html">Поке-боул та Бао</a></li> 
     </ul>
   </li>
   <li class="nav-item">
@@ -224,17 +100,16 @@ crossorigin="anonymous">
             <li>Макі авокадо</li>
             <li>Макі вугор</li>
           </ul>
-          <p class="description"><strong>36 шматочків| 785г.</strong></p>
-          <div class="price-button-wrapper">
-            <div class="price-button-container">
-              <button class="add-to-cart-button">Додати в кошик</button>
-              <p class="price" style="color: black;">190грн</p>
-            </div>
-          </div>
+          <div class="row-container">
+          <div class="description"> 
+          <p><strong>36 шматочків| 785 г. | <span class="price">380 грн</span> </strong></p>
+        </div>
+        </div>
         </div>
         </div>
       </div>
     </div>
+
     <div class="col-md-4">
       <div class="menu-item mb-4">
         <img src="Photo/sets/set_philadelphia.jpg" alt="set_philadelphia ">
@@ -250,17 +125,16 @@ crossorigin="anonymous">
             <li>Суші лосось - 2 шт.</li>
             <li>Суші Flow - 2 шт.</li>
           </ul>
-          <p class="description"> <strong>40 шматочків| 1400г. </strong></p>
-          <div class="price-button-wrapper">
-            <div class="price-button-container">
-              <button class="add-to-cart-button">Додати в кошик</button>
-              <p class="price" style="color: black;">190грн</p>
-            </div>
+          <div class="row-container">
+          <div class="description">
+          <p> <strong>40 шматочків| 1400г. | <span class="price">800 грн</span> </strong></p>
           </div>
           </div>
         </div>
       </div>
+      </div>
     </div>
+
     <div class="col-md-4">
       <div class="menu-item mb-4">
         <img src="Photo/sets/set_mix.jpg" alt="set_mix ">
@@ -274,19 +148,19 @@ crossorigin="anonymous">
             <li>Каліфорнія креветка темпура</li>
             <li>Cheese roll з пармезаном</li>
           </ul>
-          <p class="description"> <strong>38 шматочків| 1130 г. </strong></p>
-          <div class="price-button-wrapper">
-            <div class="price-button-container">
-              <button class="add-to-cart-button">Додати в кошик</button>
-              <p class="price" style="color: black;">190грн</p>
-            </div>
+          <div class="row-container">
+          <div class="description">
+          <p> <strong>38 шматочків| 1130 г. | <span class="price">510 грн</span></strong></p>
           </div>
+        </div>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 </div>
+
 
 <div class="container font1">
   <div class="row">
@@ -302,17 +176,16 @@ crossorigin="anonymous">
             <li>Філадельфія Hot</li>
             <li>Якудза</li>
           </ul>
-          <p class="description"> <strong>30 шматочків| 1050 г.</strong></p>
-          <div class="price-button-wrapper">
-            <div class="price-button-container">
-              <button class="add-to-cart-button">Додати в кошик</button>
-              <p class="price" style="color: black;">190грн</p>
-            </div>
+          <div class="row-container">
+          <div class="description">
+          <p> <strong>30 шматочків| 1050 г. | <span class="price">480 грн</span> </strong></p>
           </div>
+        </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="col-md-4">
       <div class="menu-item mb-4">
         <img src="Photo/sets/set_sensey.jpg" alt="set_sensey ">
@@ -325,17 +198,16 @@ crossorigin="anonymous">
             <li>Філадельфія classic</li>
             <li>Каліфорнія тунець</li>
           </ul>
-          <p class="description"> <strong>32 шматочки| 960 г. </strong></p>
-          <div class="price-button-wrapper">
-            <div class="price-button-container">
-              <button class="add-to-cart-button">Додати в кошик</button>
-              <p class="price" style="color: black;">190грн</p>
-            </div>
+          <div class="row-container">
+          <div class="description">
+          <p> <strong>32 шматочки| 960 г. | <span class="price">500 грн</span> </strong></p>
           </div>
+        </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="col-md-4">
       <div class="menu-item mb-4">
         <img src="Photo/sets/set_tempura.jpg" alt="set_tempura ">
@@ -348,19 +220,20 @@ crossorigin="anonymous">
             <li>Hot roll з лососем та сніжним крабом</li>
             <li>Hot roll з креветками</li>
           </ul>
-          <p class="description"> <strong>32 шматочки| 1100 г.</strong></p>
-          <div class="price-button-wrapper">
-            <div class="price-button-container">
-              <button class="add-to-cart-button">Додати в кошик</button>
-              <p class="price" style="color: black;">190грн</p>
-            </div>
+          <div class="row-container">
+          <div class="description">
+          <p> <strong>32 шматочки| 1100 г. | <span class="price">550 грн</span></strong></p>
           </div>
           </div>
         </div>
+        </div>
       </div>
     </div>
+
   </div>
 </div>
+
+
 
 <div class="container font1">
   <div class="row">
@@ -377,17 +250,16 @@ crossorigin="anonymous">
             <li> Grill roll</li>
             <li>Футомакі Ясай</li>
           </ul>
-          <p class="description"> <strong>40 шматочків|1200 г. </strong></p>
-          <div class="price-button-wrapper">
-            <div class="price-button-container">
-              <button class="add-to-cart-button">Додати в кошик</button>
-              <p class="price" style="color: black;">190грн</p>
-            </div>
+          <div class="row-container">
+         <div class="description">
+          <p> <strong>40 шматочків|1200 г. | <span class="price">530 грн</span>  </strong></p>
+         </div>
           </div>
-          </div>
+        </div>
         </div>
       </div>
     </div>
+
     <div class="col-md-4">
       <div class="menu-item mb-4">
         <img src="Photo/sets/set_philadelphia_light.jpg" alt="set_philadelphia_light ">
@@ -400,17 +272,40 @@ crossorigin="anonymous">
             <li>Філадельфія classic</li>
             <li>Філадельфія з вугрем класична</li>
           </ul>
-          <p class="description"> <strong>32 шматочки| 900 г.  </strong></p>
-          <div class="price-button-wrapper">
-            <div class="price-button-container">
-              <button class="add-to-cart-button">Додати в кошик</button>
-              <p class="price" style="color: black;">190грн</p>
-            </div>
+          <div class="row-container">
+          <div class="description">
+          <p> <strong>32 шматочки| 900 г. | <span class="price">500 грн</span> </strong></p>
           </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="menu-item mb-4">
+      <img src="Photo/sets/set_dragon.jpg" alt="set_dragon ">
+      <div class="menu-item-text">
+        <h4 style="width: 200px;">Сет Дракон</h4>
+        <div class="font2">
+        <ul>
+          <li>Ролл Канадський </li>
+          <li>Каліфорнія з лососем в ікрі тобіці</li>
+          <li>Ролл з креветкою та сиром філадельфія</li>
+          <li>Філадельфія з огірком</li>
+          <li>Зелений дракон з вугрем</li>
+        </ul>
+        <div class="row-container">
+        <div class="description">
+        <p> <strong>40 шматочків| 1170 г. | <span class="price">720 грн</span> </strong></p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   </div>
 </div>
 </body>
