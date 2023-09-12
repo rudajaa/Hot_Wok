@@ -3,7 +3,7 @@
  <head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>HotWok Гарячі ролли</title>
+ <title>Hot Wok Гарячі Ролли</title>
 
  <!--bootstrap-->
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
@@ -13,113 +13,173 @@ crossorigin="anonymous">
 <!--font-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+
 <!--connect css-->
 <link rel="stylesheet" type="text/css" href="style.css">
 
-<style>
-    body {
-      background-image: url('Photo/bg1.png');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-attachment: fixed;
-        font-family: 'Cormorant Infant', serif;
-        font-size:larger;
-        
-    }
+ </head>
+
+ <body>
+
+  <style>
+    .menu-item-text li {
+font-size: 15px;
+margin: 3px 0; /* Змінюємо margin для li */
+margin-top: 15px;
+list-style: none; 
+}
     
+/* breadcrumb */
+.breadcrumb {
+  display: flex;
+  justify-content: center; /* Додаємо цей рядок для центрування */
+  align-items: center; /* Додаємо цей рядок для центрування */
+  margin-left: 1350px ;
+  background-color: rgba(192, 192, 192, 0.21);
+  border: 3px solid rgb(168, 37, 37);
+  border: 3px solid rgb(168, 37, 37);
+  border-radius: 10px;
+   max-width: 100px;
+}
+
+.breadcrumb-item {
+  text-align: center; /* Додаємо цей рядок для центрування */
+}
+
+.breadcrumb a{
+  display: inline-block; /* Додаємо цей рядок для центрування */
+  padding: 5px 10px;
+}
     </style>
 
- </head>
- <body>
-    <div class="row text-center text-bg-danger"><h1>HotWok Гарячі ролли</h1></div>
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="main_page.html">Головна сторінка</a>
-        </li> </ul>    
+ <div class="text-center">
+  <img src="Photo/logostandart-no-bg 1.png" alt="logo_black" width="125" height="140">
+</div>
 
-        <style>
-          .position-item img {
-            width: 200px; 
-            height: 200px; 
-            object-fit: cover; /* збереження пропорцій зображення */
-          }
-      
-          .position-item  {
-            font-size: 14px; 
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100%; /* Додано для вирівнювання контейнерів */
-      
-          }
-          .position-item ul {
-            margin-top: auto;
-            margin-bottom: 10px;
-          }
-          .position-item .btn {
-                  margin-top: auto; /* Додано для вирівнювання кнопки */
-              }
-      
-          .btn btn-primary{
-              color: rgb(170, 18, 18);
-          }
-        </style>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="position-item">
-                  <img src="Photo/hot_rolls/banzai.jpg" alt="banzai " class="img-thumbnail">
-                  <h2> Банзай</h2>
-                  <p class="lead">Ціна: 200 грн</p>
-                  <h4>Склад:</h4>
-                  <ul>
-                    <li> Норі, рис, сир філадельфія, огірок, вугор, лосось, кляр темпура, соус унагі, кунжут</li>
-                    <li>8 шматочків| 270г</li>
-                  </ul>
-                  <button class="btn btn-danger">Додати в кошик</button>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="position-item">
-                  <img src="Photo/hot_rolls/phila_hot.jpg" alt="phila_hot " class="img-thumbnail">
-                  <h2>Ролл Філа Hot</h2>
-                  <p class="lead">Ціна: 160грн</p>
-                  <h4>Склад:</h4>
-                  <ul>
-                    <li> Норі, рис, сир філадельфія, лосось, кляр темпура, солодкий соєвий, кунжут</li>
-                    <li>8 шматочків| 230г </li>
-                  </ul>
-                  <button class="btn btn-danger">Додати в кошик</button>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="position-item">
-                  <img src="Photo/hot_rolls/spicy_tuna_hot.jpg" alt="spicy_tuna_hot " class="img-thumbnail">
-                  <h2>Spicy tuna hot</h2>
-                  <p class="lead">Ціна: $15</p>
-                  <h4>Склад:</h4>
-                  <ul>
-                    <li>Норі, рис, сир філадельфія, смажений тунець, огірок, тобіка, кляр темпура, соус кім чи, солодкий соєвий, кунжут</li>
-                    <li>8 шматочків| 260г </li>
-                  </ul>
-                  <button class="btn btn-danger">Додати в кошик</button>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="position-item">
-                  <img src="Photo/hot_rolls/yakuza_hot.jpg" alt="yakuza_hot " class="img-thumbnail">
-                  <h2> Якудза</h2>
-                  <p class="lead">Ціна: $15</p>
-                  <h4>Склад:</h4>
-                  <ul>
-                    <li>Норі, рис, сир філадельфія, огірок, вугор, лосось, кляр темпура, соус унагі, кунжут</li>
-                    <li>8 шматочків| 275г</li>
-                  </ul>
-                  <button class="btn btn-danger">Додати в кошик</button>
-                </div>
-              </div>
+<ul class="nav nav-tabs justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active font2" aria-current="page" href="main_page.html">Головна сторінка</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle font2" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Меню</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item font2" href="menu_sets.html">Сети</a></li>
+      <li><a class="dropdown-item font2" href="menu_rolls.html">Ролли та макі</a></li>
+      <li><a class="dropdown-item font2" href="menu_hot_rolls.html">Гарячі ролли</a></li> 
+      <li><a class="dropdown-item font2" href="menu_wok.html">Вок меню(рис, локшина)</a></li>
+      <li><a class="dropdown-item font2" href="menu_soups_snack.html">Супи та закуски</a></li>
+      <li><a class="dropdown-item font2" href="menu_sushi_burgers.html">Суші-бургери, Фірмовий Ролл</a></li> 
+      <li><a class="dropdown-item font2" href="menu_poke_bowl_bao.html">Поке-боул та Бао</a></li> 
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link font2" href="sales.html">Акції</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link font2" href="delivery.html">Доставка</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link font2" href="about.html">Про нас</a>
+  </li>
+</ul>
+
+<!--Гарячі ролли-->
+<h1 class="my-text font1">Гарячі ролли</h1>
+
+<div class="container font1">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="menu-item mb-4">
+        <img src="Photo/hot_rolls/banzai.jpg" alt="banzai">
+        <div class="menu-item-text">
+          <h4>Ролл Банзай </h4>
+          <div class="font2">
+            <ul>
+            <li style="font-size: 14px;">Норі, рис, сир філадельфія, огірок, вугор, лосось, кляр темпура, соус унагі, кунжут</li>
+          </ul>
+          <div class="row-container">
+          <div class="description"> 
+          <p><strong>8 шматочків| 270 г. | <span class="price">200 грн</span> </strong></p>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="menu-item mb-4">
+        <img src="Photo/hot_rolls/yakuza_hot.jpg" alt="yakuza_hot ">
+        <div class="menu-item-text">
+          <h4>Ролл Якудза </h4>
+          <div class="font2">
+          <ul>
+            <li style="font-size: 14px;">Норі, рис, сир філадельфія, огірок, сніжний краб, смажений лосось, кляр темпура, соус солодкий соєвий, кунжут</li>
+          </ul>
+          <div class="row-container">
+          <div class="description">
+          <p> <strong>8 шматочків| 275 г. | <span class="price">200 грн</span> </strong></p>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="menu-item mb-4">
+        <img src="Photo/hot_rolls/phila_hot.jpg" alt="phila_hot ">
+        <div class="menu-item-text">
+          <h4>Ролл Філа Hot </h4>
+          <div class="font2">
+          <ul>
+            <li style="font-size: 14px;">Норі, рис, сир філадельфія, лосось, кляр темпура, соус солодкий соєвий, кунжут</li>
+          </ul>
+          <div class="row-container">
+          <div class="description">
+          <p> <strong>8 шматочків| 230 г. | <span class="price">160 грн</span></strong></p>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container font1">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="menu-item mb-4">
+        <img src="Photo/hot_rolls/hot_roll_spicy_salmon_crab.jpg" alt="hot_roll_spicy_salmon_crab">
+        <div class="menu-item-text">
+          <h4>Ролл Spicy Hot з лососем та крабом </h4>
+          <div class="font2">
+            <ul>
+            <li style="font-size: 14px;">Норі, рис, сир філадельфія, авокадо, сніжний краб, лосось, кляр темпура, соус кім чи, соус унагі, кунжут</li>
+          </ul>
+          <div class="row-container">
+          <div class="description"> 
+          <p><strong>8 шматочків| 280 г. | <span class="price">200 грн</span> </strong></p>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
