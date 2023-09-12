@@ -1,125 +1,260 @@
 <!doctype html>
 <html lang="en">
- <head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>HotWok Суші-бургери, Фірмовий Ролл</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hot Wok Суші-бургери, Фірмові Ролли</title>
+   
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+   integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+   crossorigin="anonymous">
+   
+   <!--font-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+   
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+   
+   <!--connect css-->
+   <link rel="stylesheet" type="text/css" href="style.css">
+   
+    </head>
 
- <!--bootstrap-->
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
-integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
-crossorigin="anonymous">
+ <body>
 
-<!--font-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500&display=swap" rel="stylesheet">
-<!--connect css-->
-<link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+.menu-item-text ul {
+margin-right: 15px;
+}
 
-<style>
-    body {
-      background-image: url('Photo/bg1.png');
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-attachment: fixed;
-        font-family: 'Cormorant Infant', serif;
-        font-size:larger;
-        
-    }
+.menu-item-text li {
+font-size: 15px;
+margin: 3px 0; /* Змінюємо margin для li */
+list-style: none; 
+}
     
+/* breadcrumb */
+.breadcrumb {
+  display: flex;
+  justify-content: center; /* Додаємо цей рядок для центрування */
+  align-items: center; /* Додаємо цей рядок для центрування */
+  margin-left: 1350px ;
+  background-color: rgba(192, 192, 192, 0.21);
+  border: 3px solid rgb(168, 37, 37);
+  border: 3px solid rgb(168, 37, 37);
+  border-radius: 10px;
+   max-width: 100px;
+}
+
+.breadcrumb-item {
+  text-align: center; /* Додаємо цей рядок для центрування */
+}
+
+.breadcrumb a{
+  display: inline-block; /* Додаємо цей рядок для центрування */
+  padding: 5px 10px;
+}
     </style>
 
- </head>
- <body>
-    <div class="row text-center text-bg-danger"><h1>HotWok Суші-бургери, Фірмовий Ролл</h1></div>
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="main_page.html">Головна сторінка</a>
-        </li> </ul>    
+<div class="text-center">
+  <img src="Photo/logostandart-no-bg 1.png" alt="logo_black" width="125" height="140">
+</div>
 
-        <style>
-          .position-item img {
-            width: 200px; 
-            height: 200px; 
-            object-fit: cover; /* збереження пропорцій зображення */
-          }
-      
-          .position-item  {
-            font-size: 14px; 
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100%; /* Додано для вирівнювання контейнерів */
-      
-          }
-          .position-item ul {
-            margin-top: auto;
-            margin-bottom: 10px;
-          }
-          .position-item .btn {
-                  margin-top: auto; /* Додано для вирівнювання кнопки */
-              }
-      
-          .btn btn-primary{
-              color: rgb(170, 18, 18);
-          }
-        </style>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="position-item">
-                  <img src="Photo/sushi_burgers_branded_roll/brand_hot_roll_salmon.jpg" alt="brand_hot_roll_salmon " class="img-thumbnail">
-                  <h2>Фірмовий ролл з лососем </h2>
-                  <p class="lead">Ціна: 260грн</p>
-                  <h4>Склад:</h4>
-                  <ul>
-                    <li>Норі, рис, сир філадельфія, огірок, лосось, цибуля ріпчаста, тобіка, васабі, імбир, соус кім чи, соус унагі, японський майонез, кунжут, кляр темпура</li>
-                    <li>Вихід: 400г</li>
-                  </ul>
-                  <button class="btn btn-danger">Додати в кошик</button>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="position-item">
-                  <img src="Photo/sushi_burgers_branded_roll/brand_hot_roll_shrimp_crab.jpg" alt="brand_hot_roll_shrimp_crab " class="img-thumbnail">
-                  <h2>Фірмовий ролл з креветкою та крабом  </h2>
-                  <p class="lead">Ціна: 230грн</p>
-                  <h4>Склад:</h4>
-                  <ul>
-                    <li>Норі, рис, сир філадельфія, сніжний краб, авокадо, креветка, соус кім чи, соус унагі, японський майонез, кунжут, кляр темпура </li>
-                    <li>Вихід: 400г </li>
-                  </ul>
-                  <button class="btn btn-danger">Додати в кошик</button>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="position-item">
-                  <img src="Photo/sushi_burgers_branded_roll/sushi_burger_salmon.jpg" alt="sushi_burger_salmon " class="img-thumbnail">
-                  <h2>Суші-бургер з лососем та тунцем  </h2>
-                  <p class="lead">Ціна: 240грн</p>
-                  <h4>Склад:</h4>
-                  <ul>
-                    <li>Норі, рис, лосось, тунець, чука, сир філадельфія, авокадо, васабі, імбир, японський майонез, соус солодкий соєвий, кляр темпура</li>
-                    <li>Вихід: 360г</li>
-                  </ul>
-                  <button class="btn btn-danger">Додати в кошик</button>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="position-item">
-                  <img src="Photo/sushi_burgers_branded_roll/sushi_burger_shrimp_crab.jpg" alt="sushi_burger_shrimp_crab " class="img-thumbnail">
-                  <h2>Суші-бургер з креветкою та сніжним крабом  </h2>
-                  <p class="lead">Ціна: 240грн</p>
-                  <h4>Склад:</h4>
-                  <ul>
-                    <li> Норі, рис, креветки варені, сніжний краб, сир філадельфія, огірок, авокадо, васабі, імбир, японський майонез, соус солодкий соєвий, кляр темпура</li>
-                    <li>Вихід: 360г</li>
-                  </ul>
-                  <button class="btn btn-danger">Додати в кошик</button>
-                </div>
-              </div>
+<ul class="nav nav-tabs justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active font2" aria-current="page" href="main_page.html">Головна сторінка</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle font2" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Меню</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item font2" href="menu_sets.html">Сети</a></li>
+      <li><a class="dropdown-item font2" href="menu_rolls.html">Ролли та макі</a></li>
+      <li><a class="dropdown-item font2" href="menu_hot_rolls.html">Гарячі ролли</a></li> 
+      <li><a class="dropdown-item font2" href="menu_wok.html">Вок меню(рис, локшина)</a></li>
+      <li><a class="dropdown-item font2" href="menu_soups_snack.html">Супи та закуски</a></li>
+      <li><a class="dropdown-item font2" href="menu_sushi_burgers.html">Суші-бургери, Фірмовий Ролл</a></li> 
+      <li><a class="dropdown-item font2" href="menu_poke_bowl_bao.html">Поке-боул та Бао</a></li> 
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link font2" href="sales.html">Акції</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link font2" href="delivery.html">Доставка</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link font2" href="about.html">Про нас</a>
+  </li>
+</ul>
+
+<!--Фірмові Ролли  -->
+<h1 class="my-text font1">Фірмові Ролли</h1>
+ 
+<div class="container font1">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="menu-item mb-4">
+        <img src="Photo/sushi_burgers_firm_roll/firm_roll_salmon.jpg" alt="firm_roll_salmon">
+        <div class="menu-item-text">
+          <h4>Фірмовий ролл з лососем </h4>
+          <div class="font2">
+            <ul>
+            <li style="font-size: 13px;">Рис, лосось, сир філадельфія, японський майонез, соус солодкий
+               соєвий, цибуля ріпчаста, ікра тобіка, соус кім чи, васабі, імбир маринований, огірок, кунжут</li>
+          </ul>
+          <div class="row-container">
+          <div class="description"> 
+          <p><strong>Вихід: 320 г. | <span class="price">240 грн</span> </strong></p>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="menu-item mb-4">
+        <img src="Photo/sushi_burgers_firm_roll/firm_roll_salmon_crab.jpg" alt="firm_roll_salmon_crab ">
+        <div class="menu-item-text">
+          <h4>Фірмовий ролл з лососем та крабом</h4>
+          <div class="font2">
+          <ul>
+            <li style="font-size: 13px;">Рис, лосось, сніжний краб, сир філадельфія,
+               японський майонез, соус солодкий соєвий, васабі, імбир маринований, авокадо, кунжут </li>
+          </ul>
+          <div class="row-container">
+          <div class="description">
+          <p> <strong>Вихід: 320 г. | <span class="price">245 грн</span> </strong></p>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="menu-item mb-4">
+        <img src="Photo/sushi_burgers_firm_roll/firm_roll_fried_salmon.jpg" alt="phila_eel ">
+        <div class="menu-item-text">
+          <h4>Фірмовий ролл зі смаженим лососем </h4>
+          <div class="font2">
+          <ul>
+            <li style="font-size: 12px;">Рис, смажений лосось, сир філадельфія, японський майонез, соус солодкий соєвий, цибуля ріпчаста, ікра тобіко, соус кім чи, васабі, імбир маринований, лист салату, огірок, кунжут</li>
+          </ul>
+          <div class="row-container">
+          <div class="description">
+          <p> <strong>Вихід: 320 г. | <span class="price">230 грн</span></strong></p>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--Фірмові Hot Ролли  -->
+<h1 class="my-text font1">Фірмові Hot Ролли</h1>
+
+<div class="container font1">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="menu-item mb-4">
+        <img src="Photo/sushi_burgers_firm_roll/firm_hot_roll_salmon.jpg" alt="firm_hot_roll_salmon">
+        <div class="menu-item-text">
+          <h4>Фірмовий Hot ролл з лососем </h4>
+          <div class="font2">
+            <ul>
+            <li style="font-size: 13px;">Норі, рис, сир філадельфія, огірок, лосось, цибуля ріпчаста, тобіка, васабі, 
+              імбир, соус кім чи, соус унагі, японський майонез, кунжут, кляр темпура</li>
+          </ul>
+          <div class="row-container">
+          <div class="description"> 
+          <p><strong>Вихід: 400 г. | <span class="price">260 грн</span> </strong></p>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="menu-item mb-4">
+        <img src="Photo/sushi_burgers_firm_roll/firm_hot_roll_shrimp_crab.jpg" alt="firm_hot_roll_shrimp_crab ">
+        <div class="menu-item-text">
+          <h4>Фірмовий Hot ролл з креветкою та крабом</h4>
+          <div class="font2">
+          <ul>
+            <li style="font-size: 13px;">Норі, рис, сир філадельфія, креветка, сніжний краб, авокадо, соус унагі, японський майонез, кунжут, кляр темпура, імбир, васабі</li>
+          </ul>
+          <div class="row-container">
+          <div class="description">
+          <p> <strong>Вихід: 400 г. | <span class="price">230 грн</span> </strong></p>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<!--Суші-бургери -->
+<h1 class="my-text font1">Суші-бургери</h1>
+
+<div class="container font1">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="menu-item mb-4">
+        <img src="Photo/sushi_burgers_firm_roll/sushi_burger_shrimp_crab.jpg" alt="sushi_burger_shrimp_crab">
+        <div class="menu-item-text">
+          <h4>Суші-бургер з креветками та сніжним крабом </h4>
+          <div class="font2">
+            <ul>
+            <li style="font-size: 13px;">Норі, рис, креветки варені, сніжний краб, сир філадельфія, огірок,
+               авокадо, васабі, імбир, японський майонез, соус солодкий соєвий, кляр темпура </li>
+          </ul>
+          <div class="row-container">
+          <div class="description"> 
+          <p><strong>Вихід: 360 г. | <span class="price">240 грн</span> </strong></p>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="menu-item mb-4">
+        <img src="Photo/sushi_burgers_firm_roll/sushi_burger_salmon.jpg" alt="sushi_burger_salmon ">
+        <div class="menu-item-text">
+          <h4>Суші-бургер з лососем та тунцем</h4>
+          <div class="font2">
+          <ul>
+            <li style="font-size: 13px;">Норі, рис, лосось, тунець, чука, сир філадельфія, авокадо, 
+              васабі, імбир, японський майонез, соус солодкий соєвий, кляр темпура </li>
+          </ul>
+          <div class="row-container">
+          <div class="description">
+          <p> <strong>Вихід: 360 г. | <span class="price">240 грн</span> </strong></p>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
