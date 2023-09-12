@@ -6,81 +6,49 @@ body {
    
 }
 
-
-.center-text {
-   display: flex;
-   justify-content: center;
-}
-
-
+/* Centering for the main page*/
 .center-text {
    text-align: center;
 }
-
-.center-image {
-   display: block;
-   margin: 0 auto;
-   max-width: 100%;
-   height: auto;
-   
-}
-
 .row.text-center {
    justify-content: center;
 }
 
-.row.text-center .col {
-   flex-basis: 20%;
-   max-width: 20%;
-}
-
+/* color when hovering*/
 .nav-link {
    color: white;
 }
-
 .breadcrumb .breadcrumb-item a {
    color: white;
 }
-
 .nav-item .nav-link:hover {
    color:  rgb(168, 37, 37);
 }
-
 .nav-item.dropdown .nav-link.dropdown-toggle:focus,
 .nav-item.dropdown .nav-link.dropdown-toggle:hover {
     background-color: rgb(168, 37, 37);
     color: white;
 }
-.smaller-image {
-   max-width: 50px;
- }
- .carousel-image {
-   max-width: 100%; 
-   height: auto; 
- }
 
+/* navigation color*/
  .nav-item .nav-link {
    color: white;
  }
 
 
-
-
 /*main page, text size*/
 .text-xxl-center.font1 {
    font-size: 40px;
-   
-
 }
-
 .text-xl-center.font1 {
    font-size: 25px;
 }
-
 .text-bigger.font1 {
    font-size: 20px;
 }
 
+
+/*Headline on the main page */
 .red-marker {
    background-color: rgb(168, 37, 37);
    color: white;
@@ -89,7 +57,108 @@ body {
    display: inline-block;
  }
  
- .column:first-child {
-   margin-left: 20px;
+ 
+/*menu styles */
+body {
+   background-image: url('Photo/bg1.png');
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-attachment: fixed;
  }
  
+ .font1 {
+   font-family: 'Lobster', cursive;
+   font-size: 30px;
+   color: white;
+ }
+ 
+ .font2 {
+   font-family: 'Montserrat Alternates', sans-serif;
+   font-size: 14px;
+   line-height: 1.2;
+  flex-direction: column;
+ }
+
+
+ /*menu */
+ .my-text {
+   color: white;
+   text-shadow: -1px 0 rgb(168, 37, 37), 0 1px rgb(168, 37, 37), 1px 0 rgb(168, 37, 37), 0 -1px rgb(168, 37, 37);
+   display: inline-block;
+   border: 1px solid rgb(168, 37, 37);
+   padding: 5px;
+   margin: 0;
+   width: 100%;
+   text-align: center;
+   box-sizing: border-box;
+   background-color: rgb(168, 37, 37);
+   margin-top: 40px;
+ }
+
+ .menu-item {
+ position: relative;
+ overflow: hidden;
+ margin-top: 20px;
+ display: flex;
+ align-items: flex-start; /* Змінюємо align-items на flex-start */
+}
+
+.menu-item img {
+ max-width: 45%;
+ height: auto;
+ display: block;
+ border: 3px solid rgb(135, 32, 32);
+ border-radius: 10px;
+ flex-shrink: 0;
+ object-fit: cover;
+}
+
+.menu-item-text {
+ margin-left: 10px;
+ color: white; 
+top: 0; /* Вирівняємо текст по верхній межі .menu-item */
+min-width: 50%; /* Мінімальна ширина блоку, щоб не "перекривати" картинку */
+display: flex; /* Додали flex для гнучкого контейнера */
+flex-direction: column; /* Відображати дочірні елементи вертикально */
+flex: 1; /* Змінюємо flex на 1 для розтягування на всю доступну ширину */
+padding-bottom: 15px;  
+position: relative;
+}
+
+.menu-item-text h4 {
+flex: 1;
+border: 3px solid rgb(168, 37, 37);
+border-radius: 10px;
+background-color: rgba(192, 192, 192, 0.21);
+font-size: 17px;
+text-align: center;
+margin: 0;
+padding: 0 0; /* Додали внутрішні відступи для h4 */
+}
+
+.menu-item-text ul {
+flex-wrap: wrap;
+margin: 0; /* Додали внутрішні відступи для ul */
+
+}
+
+.description {
+position: absolute;
+top: 170px; 
+left: 18px;
+z-index: 1;
+font-size: 13px;
+}
+
+/* price */
+.row-container {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .price {
+color: rgb(211, 74, 74);
+font-size: small;
+}
+
+
