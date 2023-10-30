@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Hot Wok Суші-бургери, Фірмові Ролли</title>
+ <link rel="icon" href="Photo/icon.png" type="image/x-icon">
+
    
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
@@ -37,6 +40,9 @@ margin: 3px 0; /* Змінюємо margin для li */
 list-style: none; 
 }
     
+.menu-item-text h4{
+  font-size: 13px;
+}
 /* breadcrumb */
 .breadcrumb {
   display: flex;
@@ -58,10 +64,59 @@ list-style: none;
   display: inline-block; /* Додаємо цей рядок для центрування */
   padding: 5px 10px;
 }
+  /* navigation color*/
+  .nav-item .nav-link {
+   color: white;
+   margin-top: 10px;
+ }
+
+ .description {
+position: absolute;
+top: 170px; 
+left: 18px;
+z-index: 1;
+font-size: 13px;
+}
+
+/* price */
+.row-container {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .price {
+color: rgb(211, 74, 74);
+font-size: small;
+bottom: 1px;
+position: absolute;
+
+}
+
+.my-text{
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  body {
+            background-size: cover; /* Змінюємо розмір фонового зображення на cover */
+            overflow-x: hidden; /* Забороняє горизонтальний прокрут */
+            background-color: black;
+
+        }
+}
+
+footer {
+    background-color: rgba(168, 37, 37, 0.396); /* Колір фону підпису */
+    color: white; /* Колір тексту підпису */
+    text-align: center; /* Вирівнювання тексту по центру */
+    padding: 10px; /* Передня і задня відступи для підпису */
+    font-size: 12px;
+
+}
     </style>
 
 <div class="text-center">
-  <img src="Photo/logostandart-no-bg 1.png" alt="logo_black" width="125" height="140">
+  <img src="Photo/logostandart-no-bg 1.png" alt="logo_black" width="100" height="115">
 </div>
 
 <ul class="nav nav-tabs justify-content-center">
@@ -75,9 +130,11 @@ list-style: none;
       <li><a class="dropdown-item font2" href="menu_rolls.html">Ролли та макі</a></li>
       <li><a class="dropdown-item font2" href="menu_hot_rolls.html">Гарячі ролли</a></li> 
       <li><a class="dropdown-item font2" href="menu_wok.html">Вок меню(рис, локшина)</a></li>
-      <li><a class="dropdown-item font2" href="menu_soups_snack.html">Супи та закуски</a></li>
+      <li><a class="dropdown-item font2" href="menu_soups_lunch_boxes.html">Супи та ланч-бокси</a></li>
       <li><a class="dropdown-item font2" href="menu_sushi_burgers.html">Суші-бургери, Фірмовий Ролл</a></li> 
-      <li><a class="dropdown-item font2" href="menu_poke_bowl_bao.html">Поке-боул та Бао</a></li> 
+      <li><a class="dropdown-item font2" href="menu_poke_bowl_bao.html">Поке-боул, Бао та салати</a></li> 
+      <li><a class="dropdown-item font2" href="menu_hot_snacks.html">Гарячі закуски</a></li> 
+
     </ul>
   </li>
   <li class="nav-item">
@@ -103,12 +160,13 @@ list-style: none;
           <h4>Фірмовий ролл з лососем </h4>
           <div class="font2">
             <ul>
-            <li style="font-size: 13px;">Рис, лосось, сир філадельфія, японський майонез, соус солодкий
+            <li style="font-size: 11px;">Рис, лосось, сир філадельфія, японський майонез, соус солодкий
                соєвий, цибуля ріпчаста, ікра тобіка, соус кім чи, васабі, імбир маринований, огірок, кунжут</li>
           </ul>
           <div class="row-container">
           <div class="description"> 
-          <p><strong>Вихід: 320 г. | <span class="price">240 грн</span> </strong></p>
+          <p><strong>Вихід: 320 г. |  </strong></p>
+          <p> <strong class="price" >240 грн</strong></p>
         </div>
         </div>
         </div>
@@ -123,12 +181,13 @@ list-style: none;
           <h4>Фірмовий ролл з лососем та крабом</h4>
           <div class="font2">
           <ul>
-            <li style="font-size: 13px;">Рис, лосось, сніжний краб, сир філадельфія,
+            <li style="font-size: 11px;">Рис, лосось, сніжний краб, сир філадельфія,
                японський майонез, соус солодкий соєвий, васабі, імбир маринований, авокадо, кунжут </li>
           </ul>
           <div class="row-container">
           <div class="description">
-          <p> <strong>Вихід: 320 г. | <span class="price">245 грн</span> </strong></p>
+          <p> <strong>Вихід: 320 г. |  </strong></p>
+          <p> <strong class="price" >245 грн</strong></p>
           </div>
           </div>
         </div>
@@ -143,11 +202,12 @@ list-style: none;
           <h4>Фірмовий ролл зі смаженим лососем </h4>
           <div class="font2">
           <ul>
-            <li style="font-size: 12px;">Рис, смажений лосось, сир філадельфія, японський майонез, соус солодкий соєвий, цибуля ріпчаста, ікра тобіко, соус кім чи, васабі, імбир маринований, лист салату, огірок, кунжут</li>
+            <li style="font-size: 10px;">Рис, смажений лосось, сир філадельфія, японський майонез, соус солодкий соєвий, цибуля ріпчаста, ікра тобіко, соус кім чи, васабі, імбир маринований, лист салату, огірок, кунжут</li>
           </ul>
           <div class="row-container">
           <div class="description">
-          <p> <strong>Вихід: 320 г. | <span class="price">230 грн</span></strong></p>
+          <p> <strong>Вихід: 320 г. | </strong></p>
+          <p> <strong class="price" >230 грн</strong></p>
           </div>
         </div>
           </div>
@@ -170,12 +230,13 @@ list-style: none;
           <h4>Фірмовий Hot ролл з лососем </h4>
           <div class="font2">
             <ul>
-            <li style="font-size: 13px;">Норі, рис, сир філадельфія, огірок, лосось, цибуля ріпчаста, тобіка, васабі, 
+            <li style="font-size: 11px;">Норі, рис, сир філадельфія, огірок, лосось, цибуля ріпчаста, тобіка, васабі, 
               імбир, соус кім чи, соус унагі, японський майонез, кунжут, кляр темпура</li>
           </ul>
           <div class="row-container">
           <div class="description"> 
-          <p><strong>Вихід: 400 г. | <span class="price">260 грн</span> </strong></p>
+          <p><strong>Вихід: 400 г. |  </strong></p>
+          <p> <strong class="price" >260 грн</strong></p>
         </div>
         </div>
         </div>
@@ -190,11 +251,12 @@ list-style: none;
           <h4>Фірмовий Hot ролл з креветкою та крабом</h4>
           <div class="font2">
           <ul>
-            <li style="font-size: 13px;">Норі, рис, сир філадельфія, креветка, сніжний краб, авокадо, соус унагі, японський майонез, кунжут, кляр темпура, імбир, васабі</li>
+            <li style="font-size: 11px;">Норі, рис, сир філадельфія, креветка, сніжний краб, авокадо, соус унагі, японський майонез, кунжут, кляр темпура, імбир, васабі</li>
           </ul>
           <div class="row-container">
           <div class="description">
-          <p> <strong>Вихід: 400 г. | <span class="price">230 грн</span> </strong></p>
+          <p> <strong>Вихід: 400 г. |  </strong></p>
+          <p> <strong class="price" >230 грн</strong></p>
           </div>
           </div>
         </div>
@@ -218,12 +280,13 @@ list-style: none;
           <h4>Суші-бургер з креветками та сніжним крабом </h4>
           <div class="font2">
             <ul>
-            <li style="font-size: 13px;">Норі, рис, креветки варені, сніжний краб, сир філадельфія, огірок,
+            <li style="font-size: 11px;">Норі, рис, креветки варені, сніжний краб, сир філадельфія, огірок,
                авокадо, васабі, імбир, японський майонез, соус солодкий соєвий, кляр темпура </li>
           </ul>
           <div class="row-container">
           <div class="description"> 
-          <p><strong>Вихід: 360 г. | <span class="price">240 грн</span> </strong></p>
+          <p><strong>Вихід: 360 г. | </strong></p>
+          <p> <strong class="price" >240 грн</strong></p>
         </div>
         </div>
         </div>
@@ -238,12 +301,13 @@ list-style: none;
           <h4>Суші-бургер з лососем та тунцем</h4>
           <div class="font2">
           <ul>
-            <li style="font-size: 13px;">Норі, рис, лосось, тунець, чука, сир філадельфія, авокадо, 
+            <li style="font-size: 11px;">Норі, рис, лосось, тунець, чука, сир філадельфія, авокадо, 
               васабі, імбир, японський майонез, соус солодкий соєвий, кляр темпура </li>
           </ul>
           <div class="row-container">
           <div class="description">
-          <p> <strong>Вихід: 360 г. | <span class="price">240 грн</span> </strong></p>
+          <p> <strong>Вихід: 360 г. |  </strong></p>
+          <p> <strong class="price" >240 грн</strong></p>
           </div>
           </div>
         </div>
@@ -254,6 +318,11 @@ list-style: none;
 
   </div>
 </div>
+
+
+<footer>
+  &copy; HotWok 2023 Всі права захищені.
+</footer>
 
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
