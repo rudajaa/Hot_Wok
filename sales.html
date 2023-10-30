@@ -2,8 +2,12 @@
 <html lang="en">
  <head>
  <meta charset="utf-8">
+ 
  <meta name="viewport" content="width=device-width, initial-scale=1">
+
  <title>Hot Wok Акції</title>
+ <link rel="icon" href="Photo/icon.png" type="image/x-icon">
+
  <!--font-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,82 +35,114 @@ crossorigin="anonymous">
 
   <style>
      body {
-    background-image: url('Photo/bg1.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
+        background-image: url('Photo/bg1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .font1 {
+        font-family: 'Lobster', cursive;
+        font-size: 13px;
+        color: white;
+    }
+    .font2 {
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 13px;
+        line-height: 1.2;
+    }
+
+    .text-xxl-center.font1 {
+   font-size: 20px;
 }
 
-.font1 {
-  font-family: 'Lobster', cursive;
-  font-size:larger;
-  color: white;
-}
-.font2 {
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 14px;
-  line-height: 1.2;
-}
+.custom-border {
+            display: inline-block;
+            padding: 5px 10px;
+            border: 2px solid rgb(168, 37, 37);
+            border-radius: 10px;
+            background-color: rgb(168, 37, 37);
+        }
 
-.custom-border{
-  display: inline-block;
-  padding: 5px 10px;
-  border: 2px solid rgb(168, 37, 37);
-  border-radius: 10px;
-  background-color: rgb(168, 37, 37);
-}
+        .custom-border h1 {
+            color: white;
+            font-weight: lighter;
+            font-size: 18px;
+        }
 
-.custom-border h1 {
-  color: white;
-  font-weight: lighter;
-}
+        .column-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 10px; /* Додано внутрішній відступ */
+        }
 
-.column-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+        .column {
+            flex: 0 0 calc(100% - 20px); /* Змінено на 100% ширини з внутрішнім відступом */
+            width: calc(100% - 20px); /* Змінено на 100% ширини з внутрішнім відступом */
+            border: 3px solid rgb(168, 37, 37);
+            background-color: rgba(192, 192, 192, 0.308);
+            color: white;
+            padding: 10px;
+            border-radius: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
 
-.column {
-  flex: 0 0 calc(30% - 10px);
-  width: calc(30% - 10px);
-  border: 7px solid rgb(168, 37, 37);
-  background-color: rgba(192, 192, 192, 0.308);
-  color: white;
-  padding: 10px;
-  border-radius: 40px;
-  margin-bottom: 20px;
-  text-align: center;
-  box-sizing: border-box;
-}
-.column-container::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+        .column-container::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
 
+        .column img {
+            margin-bottom: 30px;
+        }
 
-.column img {
-  margin-bottom: 30px; 
-}
+        .column:first-child {
+            margin-left: 0;
+        }
 
-.column:first-child {
-  margin-left: 40px;
-}
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+        .custom-text {
+            font-size: 20px;
+        }
 
-.custom-text {
-  font-size: 20px;
+        /* navigation color*/
+        .nav-item .nav-link {
+            color: white;
+        }
+
+        /* Відступи для навігаційного меню */
+        .nav-tabs {
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+          body {
+            background-size: cover; /* Змінюємо розмір фонового зображення на cover */
+            overflow-x: hidden; /* Забороняє горизонтальний прокрут */
+
+        }
+        }
+
+        footer {
+    background-color: rgba(168, 37, 37, 0.396); /* Колір фону підпису */
+    color: white; /* Колір тексту підпису */
+    text-align: center; /* Вирівнювання тексту по центру */
+    padding: 10px; /* Передня і задня відступи для підпису */
+    font-size: 12px;
+
 }
+  
 </style>
 
 <div class="text-center">
-  <img src="Photo/logostandart-no-bg 1.png" alt="logo_black" width="125" height="140">
+  <img src="Photo/logostandart-no-bg 1.png" alt="logo_black" width="100" height="115">
 </div>
 
 <ul class="nav nav-tabs justify-content-center">
@@ -120,9 +156,11 @@ crossorigin="anonymous">
       <li><a class="dropdown-item font2" href="menu_rolls.html">Ролли та макі</a></li>
       <li><a class="dropdown-item font2" href="menu_hot_rolls.html">Гарячі ролли</a></li> 
       <li><a class="dropdown-item font2" href="menu_wok.html">Вок меню(рис, локшина)</a></li>
-      <li><a class="dropdown-item font2" href="menu_soups_snack.html">Супи та закуски</a></li>
+      <li><a class="dropdown-item font2" href="menu_soups_lunch_boxes.html">Супи та ланч-бокси</a></li>
       <li><a class="dropdown-item font2" href="menu_sushi_burgers.html">Суші-бургери, Фірмовий Ролл</a></li> 
-      <li><a class="dropdown-item font2" href="menu_poke_bowl_bao.html">Поке-боул та Бао</a></li> 
+      <li><a class="dropdown-item font2" href="menu_poke_bowl_bao.html">Поке-боул, Бао та салати</a></li> 
+      <li><a class="dropdown-item font2" href="menu_hot_snacks.html">Гарячі закуски</a></li> 
+
     </ul>
   </li>
   <li class="nav-item">
@@ -138,66 +176,58 @@ crossorigin="anonymous">
 
 <div class="row text-center">
   <h1 class="text-xxl-center font1">
-    <span class="custom-border" style="margin: 0 auto; float: none; margin-top: 20px;">Акції</span>
+      <span class="custom-border" style="margin: 0 auto; float: none; margin-top: 20px;">Акції</span>
   </h1>
 </div>
 
 <div class="column-container">
-  <div class="column">
-    <div class="font1">
-      <h2>Самовивіз</h2>
-    </div>
-    <div class="font2">
-      <p>При самовивозі ми надаємо знижку 5%
-        на Ваше замовлення</p>
-      <img src="Photo/character.png" alt="character" />
-    </div>
+  
+  <div class="column  mx-auto">
+      <div class="font1">
+          <h2>День Народження</h2>
+      </div>
+      <div class="font2">
+          <p>За день, в день та в день
+              після дня народження: знижка
+              10% на все меню</p>
+          <p style="margin-top: 55px;">Пиши коментар до свого замовлення "День
+              Народження", надішли фото документу та отримай
+              свою знижку</p>
+      </div>
   </div>
-  <div class="column">
-    <div class="font1">
-      <h2>День Народження</h2>
-    </div>
-    <div class="font2">
-      <p>За день, в день та в день
-        після дня народження: знижка
-        10% на все меню</p>
-        <p style="margin-top: 55px;">Пиши коментар до свого замовлення "День
-        Народження", надішли фото документу та отримай
-        свою знижку</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="font1">
-      <h2>Відмітка в сторіз</h2>
-    </div>
-    <div class="font2">
-      <p>Якщо відмічаєте нас в сторіз
-        інстаграм з вігуком, то на
-        наступне замовлення даруємо знижуц в 10%</p>
-    </div>
-    <img src="Photo/inst.png" alt="inst" />
+  <div class="column  mx-auto">
+      <div class="font1">
+          <h2>Відмітка в сторіз</h2>
+      </div>
+      <div class="font2">
+        <p>Якщо відмічаєте нас в сторіз
+          інстаграм з відгуком, то на
+          наступне замовлення в інстаграмі даруємо знижку в 10%. </p>
+      </div>
+      <img src="Photo/inst.png" alt="inst" />
   </div>
 </div>
 
 <div class="row text-center">
   <h1 class="text-xxl-center font1">
-    <span class="custom-border" style="margin: 0 auto; float: none; margin-top: 20px;">
-      <span class="custom-text" style="display: inline-block; vertical-align: top; margin-top: 10px;">
-        Ми пропонуємо Вам швидкі та зручні 
-        способи отримати знижку на Ваші улюблені страви.
-         Наша система проста у використанні і не потребиє жодних складних кроків.
+      <span class="custom-border" style="margin: 0 auto; float: none; margin-top: 10px;">
+          <span class="custom-text" style="display: inline-block; vertical-align: top; margin-top: 5px;font-size: 15px;">
+              Ми пропонуємо Вам швидкі та зручні
+              способи отримати знижку на Ваші улюблені страви.
+              Наша система проста у використанні і не потребує жодних складних кроків.
+          </span>
       </span>
-    </span>
   </h1>
 </div>
 
-     
 
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
-crossorigin="anonymous"></script>
+<footer>
+  &copy; HotWok 2023 Всі права захищені.
+</footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+  crossorigin="anonymous"></script>
+</body>
 
-
- </body>
 </html>
