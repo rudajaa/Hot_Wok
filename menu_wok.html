@@ -3,7 +3,10 @@
  <head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
+
  <title>Hot Wok Вок меню</title>
+ <link rel="icon" href="Photo/icon.png" type="image/x-icon">
+
 
  <!--bootstrap-->
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
@@ -28,7 +31,7 @@ crossorigin="anonymous">
  <body>
   <style>
     body {
-      background-image: url('Photo/bg1.png');
+      background-color: black;
       background-repeat: no-repeat;
       background-size: 100% 100%;
       background-attachment: fixed;
@@ -46,6 +49,7 @@ crossorigin="anonymous">
       line-height: 1.2;
     }
     
+    
     .my-text {
       color: white;
       text-shadow: -1px 0 rgb(168, 37, 37), 0 1px rgb(168, 37, 37), 1px 0 rgb(168, 37, 37), 0 -1px rgb(168, 37, 37);
@@ -57,7 +61,8 @@ crossorigin="anonymous">
       text-align: center;
       box-sizing: border-box;
       background-color: rgb(168, 37, 37);
-      margin-top: 40px;
+      margin-top: 45px;
+      font-size: 18px;
     }
     
     .column-container {
@@ -75,7 +80,7 @@ crossorigin="anonymous">
       border-radius: 25px;
       margin-top: 40px;
       color: white;
-      font-size: 22px;
+      font-size: 18px;
       height: 200px;
       text-align: center;
       margin-left: 45px;
@@ -90,7 +95,7 @@ crossorigin="anonymous">
       border-radius: 25px;
       margin-top: 40px;
       color: white;
-      font-size: 18px;
+      font-size: 16px;
       height: 200px;
       text-align: center;
       margin-right: 45px;
@@ -115,7 +120,7 @@ crossorigin="anonymous">
     }
     
     .text {
-      margin-top: 35px; 
+      margin-top: 45px; 
     }
     
     .row-container {
@@ -134,7 +139,7 @@ crossorigin="anonymous">
       border: 3px solid rgb(168, 37, 37);
       padding: 5px;
       border-radius: 15px;
-      font-size: 18px;
+      font-size: 15px;
       text-align: center;
       color: white;
       margin-top: 35px;
@@ -158,28 +163,34 @@ crossorigin="anonymous">
       padding-top: 7px;
       font-weight: 650;
     }
-    
-    /*breadcrumb */
-.breadcrumb {
-  display: flex;
-  justify-content: center; /* Додаємо цей рядок для центрування */
-  align-items: center; /* Додаємо цей рядок для центрування */
-  margin-left: 1350px ;
-  background-color: rgba(192, 192, 192, 0.21);
-  border: 3px solid rgb(168, 37, 37);
-  border-radius: 10px;
-   max-width: 100px;
+
+      /* navigation color*/
+ .nav-item .nav-link {
+   color: white;
+   font-size: 12px;
    margin-top: 10px;
+ }
+
+    
+ .description {
+position: absolute;
+top: 170px; 
+left: 18px;
+z-index: 1;
+font-size: 13px;
 }
 
-.breadcrumb-item {
-  text-align: center; /* Додаємо цей рядок для центрування */
-  
-}
+/* price */
+.row-container {
+   display: flex;
+   justify-content: space-between;
+ }
 
-.breadcrumb a{
-  display: inline-block; /* Додаємо цей рядок для центрування */
-  padding: 5px 10px;
+ .price {
+color: rgb(211, 74, 74);
+font-size: small;
+bottom: 1px;
+
 }
 
 /* marks */
@@ -197,10 +208,71 @@ crossorigin="anonymous">
   margin-left: 160px;
   margin-bottom: 10px;
 }
+ 
+
+
+ @media (max-width: 768px) {
+        body {
+            background-size: cover; /* Змінюємо розмір фонового зображення на cover */
+            overflow-x: hidden; /* Забороняє горизонтальний прокрут */
+            background-attachment: fixed;
+        }
+
+        .font1 {
+            font-size: 20px; /* Зменшуємо розмір шрифту для заголовку */
+        }
+
+        .font2 {
+            font-size: 12px; /* Зменшуємо розмір шрифту для тексту */
+        }
+
+        .my-text {
+            font-size: 16px; /* Зменшуємо розмір шрифту для текстового блоку */
+            
+        }
+
+
+        .column-container {
+            flex-direction: column; /* Змінюємо напрямок стовпців на вертикальний */
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px; /* Ваші існуючі стилі */
+        }
+
+        .column1 {
+            flex-basis: 100%; /* Розширюємо стовпці на весь екран */
+            margin: 0; /* Знімаємо зовнішні відступи */
+            text-align: center; /* Центруємо текст у стовпцях */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+         .column2{
+            flex-basis: 100%; /* Розширюємо стовпці на весь екран */
+            margin: 0; /* Знімаємо зовнішні відступи */
+            text-align: center; /* Центруємо текст у стовпцях */
+            margin-top: 10px;
+            padding-bottom: 30px;
+         }
+    }
+
+
+    footer {
+    background-color: rgba(168, 37, 37, 0.396); /* Колір фону підпису */
+    color: white; /* Колір тексту підпису */
+    text-align: center; /* Вирівнювання тексту по центру */
+    padding: 10px; /* Передня і задня відступи для підпису */
+    font-size: 12px;
+
+}
 </style>
   
   <div class="text-center">
-    <img src="Photo/logostandart-no-bg 1.png" alt="logo_black" width="125" height="140">
+    <img src="Photo/logostandart-no-bg 1.png" alt="logo_black" width="100" height="115">
   </div>
   
   <ul class="nav nav-tabs justify-content-center">
@@ -214,9 +286,11 @@ crossorigin="anonymous">
         <li><a class="dropdown-item font2" href="menu_rolls.html">Ролли та макі</a></li>
         <li><a class="dropdown-item font2" href="menu_hot_rolls.html">Гарячі ролли</a></li> 
         <li><a class="dropdown-item font2" href="menu_wok.html">Вок меню(рис, локшина)</a></li>
-        <li><a class="dropdown-item font2" href="menu_soups_snack.html">Супи та закуски</a></li>
+        <li><a class="dropdown-item font2" href="menu_soups_lunch_boxes.html">Супи та ланч-бокси</a></li>
         <li><a class="dropdown-item font2" href="menu_sushi_burgers.html">Суші-бургери, Фірмовий Ролл</a></li> 
-        <li><a class="dropdown-item font2" href="menu_poke_bowl_bao.html">Поке-боул та Бао</a></li> 
+        <li><a class="dropdown-item font2" href="menu_poke_bowl_bao.html">Поке-боул, Бао та салати</a></li> 
+        <li><a class="dropdown-item font2" href="menu_hot_snacks.html">Гарячі закуски</a></li> 
+
       </ul>
     </li>
     <li class="nav-item">
@@ -254,7 +328,7 @@ crossorigin="anonymous">
         <p><strong>Склад:</strong> Морква, перець болгарський, цибуля, імбир, часник, соус устричний, спаржа, креветки, кунжут, зелена цибуля.</p>
         <p><strong>Вихід: 350г</strong></p>
         <div class="row-container product ">
-          <p class="price" style="color: white;">190грн</p>
+          <p class="price" style="color: white;">210грн</p>
           <img src="Photo/hot_seafood_pict/octopus.png" alt="octopus" class="marks">
         </div>
       </div>
@@ -264,17 +338,17 @@ crossorigin="anonymous">
         <p><strong>Склад:</strong> Морква, перець болгарський, цибуля, імбир, часник, соус устричний, спаржа, креветки, кунжут, зелена цибуля.</p>
         <p><strong>Вихід: 320г</strong></p>
         <div class="row-container product ">
-          <p class="price" style="color: white;">180грн</p>
+          <p class="price" style="color: white;">200грн</p>
           <img src="Photo/hot_seafood_pict/octopus.png" alt="octopus" class="marks">
         </div>
       </div>
   
       <div class="col-md-3">  
         <h2>Зі свининою</h2>
-        <p><strong>Склад: </strong>Свинина, цибуля, морква, перець болгарський, імбир, часник, соус устричний, кунжут, зелена цибуля.</p>
+        <p><strong>Склад: </strong>Свинина, цибуля, морква, перець болгарський, імбир, часник, соус устричний, кунжут, зелена цибуля, гриби шиїтаке.</p>
         <p style="margin-top: 32px;"><strong>Вихід: 320г</strong></p>
         <div class="row-container">
-          <p class="price" style="color: white;">160грн</p>
+          <p class="price" style="color: white;">170грн</p>
         </div>
       </div>
   
@@ -283,7 +357,7 @@ crossorigin="anonymous">
         <p><strong>Склад: </strong>Цибуля, перець болгарський, огірок, імбир, часник, теріякі соус, спаржа, кунжут, зелена цибуля, сушений пікантний перець.</p>
         <p><strong>Вихід: 320г</strong></p>
         <div class="row-container">
-          <p class="price" style="color: white;">170грн</p>
+          <p class="price" style="color: white;">180грн</p>
         </div>
       </div>
     </div>
@@ -293,10 +367,10 @@ crossorigin="anonymous">
     <div class="row">
       <div class="col-md-3">
         <h2>З куркою</h2>
-        <p><strong>Склад:</strong> Курочка, цибуля, морква, перець болгарський, імбир, часник, соус теріякі, кунжут, зелена цибуля.</p>
+        <p><strong>Склад:</strong> Курочка, цибуля, морква, перець болгарський, імбир, часник, соус теріякі, кунжут, зелена цибуля, гриби шиїтаке.</p>
         <p><strong>Вихід: 320г</strong></p>
         <div class="row-container">
-          <p class="price" style="color: white;">145грн</p>
+          <p class="price" style="color: white;">155грн</p>
         </div>
       </div>
   
@@ -305,7 +379,7 @@ crossorigin="anonymous">
         <p><strong>Склад: </strong>Цибуля, морква, перець болгарський, імбир, часник, соус теріякі, спаржа, кунжут, зелена цибуля.</p>
         <p><strong>Вихід: 310г</strong></p>
         <div class="row-container">
-          <p class="price" style="color: white;">125грн</p>
+          <p class="price" style="color: white;">135грн</p>
         </div>
       </div>
     </div>
@@ -335,7 +409,7 @@ crossorigin="anonymous">
         <p><strong>Склад: </strong>Перець болгарський, цибуля, манго, імбир, часник, соус устричний, спаржа, креветки, мідії, кальмар, кунжут, зелена цибуля.</p>
         <p><strong>Вихід: 350г</strong></p>
         <div class="row-container product ">
-          <p class="price" style="color: white;">190грн</p>
+          <p class="price" style="color: white;">210грн</p>
           <img src="Photo/hot_seafood_pict/octopus.png" alt="octopus" class="marks">
         </div>
       </div>
@@ -345,7 +419,7 @@ crossorigin="anonymous">
         <p><strong>Склад:</strong> Морква, перець болгарський, цибуля, імбир, часник, соус устричний, спаржа, креветки, кунжут, зелена цибуля.</p>
         <p><strong>Вихід: 330г</strong></p>
         <div class="row-container product ">
-          <p class="price" style="color: white;">180грн</p>
+          <p class="price" style="color: white;">200грн</p>
           <img src="Photo/hot_seafood_pict/octopus.png" alt="octopus" class="marks">
         </div>
       </div>
@@ -355,7 +429,7 @@ crossorigin="anonymous">
         <p><strong>Склад: </strong>Свинина, цибуля, морква, перець болгарський, імбир, часник,спаржа, соус теріякі, кунжут, зелена цибуля.</p>
         <p style="margin-top: 32px;"><strong>Вихід: 330г</strong></p>
         <div class="row-container">
-          <p class="price" style="color: white;">160грн</p>
+          <p class="price" style="color: white;">170грн</p>
         </div>
       </div>
   
@@ -364,7 +438,7 @@ crossorigin="anonymous">
         <p><strong>Склад:</strong> Цибуля, перець болгарський, огірок, імбир, часник, теріякі соус, спаржа, кунжут, зелена цибуля, сушений пікантний перець.</p>
         <p><strong>Вихід: 330г</strong></p>
         <div class="row-container">
-          <p class="price" style="color: white;">170грн</p>
+          <p class="price" style="color: white;">180грн</p>
         </div>
       </div>
     </div>
@@ -377,7 +451,7 @@ crossorigin="anonymous">
         <p><strong>Склад:</strong> Курочка, цибуля, морква, перець болгарський, імбир, часник, спаржа, соус теріякі, кунжут, зелена цибуля.</p>
         <p><strong>Вихід: 330г</strong></p>
         <div class="row-container">
-          <p class="price" style="color: white;">145грн</p>
+          <p class="price" style="color: white;">155грн</p>
         </div>
       </div>
   
@@ -386,7 +460,7 @@ crossorigin="anonymous">
         <p><strong>Склад:</strong> Цибуля, морква, перець болгарський, імбир, часник, соус теріякі, спаржа, кунжут, зелена цибуля.</p>
         <p><strong>Вихід: 320г</strong></p>
         <div class="row-container">
-          <p class="price" style="color: white;">125грн</p>
+          <p class="price" style="color: white;">135грн</p>
         </div>
       </div>
     </div>
@@ -415,7 +489,7 @@ crossorigin="anonymous">
       <p><strong>Склад:</strong> Перець болгарський, цибуля, манго, імбир, часник, соус устричний, спаржа, креветки, мідії, кальмар, кунжут, зелена цибуля. </p>
       <p><strong>Вихід: 350г</strong></p>
       <div class="row-container product ">
-        <p class="price" style="color: white;">190грн</p>
+        <p class="price" style="color: white;">210грн</p>
         <img src="Photo/hot_seafood_pict/octopus.png" alt="octopus" class="marks">
       </div>
     </div>
@@ -425,7 +499,7 @@ crossorigin="anonymous">
       <p><strong>Склад:</strong> Морква, перець болгарський, цибуля, імбир, часник, соус устричний, спаржа, креветки, кунжут, зелена цибуля.</p>
       <p><strong>Вихід: 330г</strong></p>
       <div class="row-container product ">
-        <p class="price" style="color: white;">180рн</p>
+        <p class="price" style="color: white;">200рн</p>
         <img src="Photo/hot_seafood_pict/octopus.png" alt="octopus" class="marks">
       </div>
     </div>
@@ -435,7 +509,7 @@ crossorigin="anonymous">
       <p><strong>Склад: </strong>Свинина, цибуля, морква, перець болгарський, імбир, часник, соус фірмовий, кунжут, зелена цибуля.</p>
       <p style="margin-top: 35px;"><strong>Вихід: 330г</strong></p>
       <div class="row-container">
-        <p class="price" style="color: white;">160грн</p>
+        <p class="price" style="color: white;">170грн</p>
       </div>
     </div>
 
@@ -444,7 +518,7 @@ crossorigin="anonymous">
       <p><strong>Склад:</strong> Курочка, цибуля, морква, перець болгарський, імбир, часник, соус фірмовий, кунжут, зелена цибуля.</p>
       <p style="margin-top: 35px;"><strong>Вихід: 330г</strong></p>
       <div class="row-container">
-        <p class="price" style="color: white;">145грн</p>
+        <p class="price" style="color: white;">155грн</p>
       </div>
     </div>
 
@@ -454,7 +528,7 @@ crossorigin="anonymous">
       <p><strong>Склад:</strong> Цибуля, морква, перець болгарський, імбир, часник, соус фірмовий, спаржа, кунжут, зелена цибуля. </p>
       <p><strong>Вихід: 310г</strong></p>
       <div class="row-container">
-        <p class="price" style="color: white;">125грн</p>
+        <p class="price" style="color: white;">135грн</p>
       </div>
     </div>
   </div>
@@ -484,7 +558,7 @@ crossorigin="anonymous">
         <p><strong>Склад:</strong> Перець болгарський, цибуля, манго, імбир, часник, соус устричний, спаржа, креветки, мідії, кальмар, кунжут, зелена цибуля.</p>
         <p><strong>Вихід: 350г</strong></p>
         <div class="row-container product ">
-          <p class="price" style="color: white;">190грн</p>
+          <p class="price" style="color: white;">210грн</p>
           <img src="Photo/hot_seafood_pict/octopus.png" alt="octopus" class="marks">
         </div>
       </div>
@@ -494,7 +568,7 @@ crossorigin="anonymous">
         <p><strong>Склад: </strong>Морква, перець болгарський, цибуля, імбир, часник, соус устричний, спаржа, креветки, кунжут, зелена цибуля.</p>
         <p><strong>Вихід: 330г</strong></p>
         <div class="row-container product ">
-          <p class="price" style="color: white;">180грн</p>
+          <p class="price" style="color: white;">200грн</p>
           <img src="Photo/hot_seafood_pict/octopus.png" alt="octopus" class="marks">
         </div>
       </div>
@@ -504,7 +578,7 @@ crossorigin="anonymous">
         <p><strong>Склад:</strong> Свинина, цибуля, морква, перець болгарський, імбир, часник, капуста кім чи, соус фірмовий, кунжут, зелена цибуля.</p>
         <p><strong>Вихід: 330г</strong></p>
         <div class="row-container">
-          <p class="price" style="color: white;">160грн</p>
+          <p class="price" style="color: white;">170грн</p>
         </div>
       </div>
   
@@ -513,7 +587,7 @@ crossorigin="anonymous">
         <p><strong>Склад:</strong> Цибуля, перець болгарський, огірок, імбир, часник, теріякі соус, спаржа, кунжут, зелена цибуля, сушений пікантний перець.</p>
         <p><strong>Вихід: 330г</strong></p>
         <div class="row-container">
-          <p class="price" style="color: white;">170грн</p>
+          <p class="price" style="color: white;">180грн</p>
         </div>
       </div>
     </div>
@@ -526,7 +600,7 @@ crossorigin="anonymous">
         <p><strong>Склад:</strong> Курочка, цибуля, морква, перець болгарський, імбир, часник, капуста кім чи, соус фірмовий, кунжут, зелена цибуля.</p>
         <p><strong>Вихід: 330г</strong></p>
         <div class="row-container">
-          <p class="price" style="color: white;">145грн</p>
+          <p class="price" style="color: white;">155грн</p>
         </div>
       </div>
   
@@ -535,7 +609,7 @@ crossorigin="anonymous">
         <p><strong>Склад: </strong>Цибуля, морква, перець болгарський, імбир, часник, соус фірмовий, капуста кім чи, кунжут, зелена цибуля.</p>
         <p style="margin-top: 32px;"><strong>Вихід: 310г</strong></p>
         <div class="row-container">
-          <p class="price" style="color: white;">125грн</p>
+          <p class="price" style="color: white;">135грн</p>
         </div>
       </div>
     </div>
@@ -565,7 +639,7 @@ crossorigin="anonymous">
         <p><strong>Склад:</strong> Морква, перець болгарський, цибуля, імбир, часник, соус устричний, спаржа, креветки, кунжут, зелена цибуля.</p>
         <p><strong>Вихід: 330г</strong></p>
         <div class="row-container product ">
-          <p class="price" style="color: white;">180грн</p>
+          <p class="price" style="color: white;">200грн</p>
           <img src="Photo/hot_seafood_pict/octopus.png" alt="octopus" class="marks">
         </div>
       </div>
@@ -575,7 +649,7 @@ crossorigin="anonymous">
         <p><strong>Склад: </strong>Рис, цибуля, морква, перець болгарський, імбир, часник, спаржа, соус фірмовий, свинина, кунжут, зелена цибуля.</p>
         <p><strong>Вихід: 320г</strong></p>
         <div class="row-container">
-          <p class="price" style="color: white;">160грн</p>
+          <p class="price" style="color: white;">170грн</p>
         </div>
       </div>
   
@@ -584,7 +658,7 @@ crossorigin="anonymous">
         <p><strong>Склад: </strong>Рис, курочка, цибуля, морква, перець болгарський, імбир, часник, спаржа, соус фірмовий, кунжут, зелена цибуля.</p>
         <p><strong>Вихід: 320г</strong></p>
         <div class="row-container">
-          <p class="price" style="color: white;">145грн</p>
+          <p class="price" style="color: white;">155грн</p>
         </div>
       </div>
   
@@ -593,7 +667,7 @@ crossorigin="anonymous">
         <p><strong>Склад: </strong>Рис, цибуля, морква, перець болгарський, імбир, часник, соус фірмовий, спаржа, гриби печериці, кунжут, зелена цибуля.</p>
         <p><strong>Вихід: 320г</strong></p>
         <div class="row-container">
-          <p class="price" style="color: white;">125грн</p>
+          <p class="price" style="color: white;">135грн</p>
         </div>
       </div>
     </div>
@@ -621,7 +695,7 @@ crossorigin="anonymous">
         <p><strong>Склад:</strong>Рис, цибуля, морква, перець болгарський, імбир, часник, соус кисло-солодкий, спаржа, капуста кім чи, курочка, зелена цибуля, кунжут</p>
         <p style="margin-top: 35px;"><strong>Вихід: 350г</strong></p>
         <div class="row-container product ">
-          <p class="price" style="color: white;">150грн</p>
+          <p class="price" style="color: white;">160грн</p>
           <img src="Photo/hot_seafood_pict/pepper.png" alt="pepper" class="marks">
         </div>
       </div>
@@ -631,7 +705,7 @@ crossorigin="anonymous">
         <p><strong>Склад:</strong> Рис, цибуля, морква, перець болгарський, імбир, часник, спаржа, соус кисло-солодкий, капуста кім чи, свинина, кунжут, зелена цибуля.</p>
         <p><strong>Вихід: 350г</strong></p>
         <div class="row-container product ">
-          <p class="price" style="color: white;">160грн</p>
+          <p class="price" style="color: white;">170грн</p>
           <img src="Photo/hot_seafood_pict/pepper.png" alt="pepper" class="marks">
         </div>
       </div>
@@ -661,22 +735,17 @@ crossorigin="anonymous">
 </div>
 
     
-
     </div>
   </div>
 </div>
 
    
-<!--  Breadcrumb  -->
- 
-  
-   <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-    <li class="breadcrumb-item "><a href="#">Вгору</a></li>
-    </ol>
-   </nav>
 
- 
+   <footer>
+    &copy; HotWok 2023 Всі права захищені.
+</footer>
+
+
       </body> 
 
       
