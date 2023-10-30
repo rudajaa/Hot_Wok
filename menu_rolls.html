@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hot Wok Ролли</title>
+    <link rel="icon" href="Photo/icon.png" type="image/x-icon">
+
    
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
@@ -28,37 +30,77 @@
 
   <style>
     .menu-item-text li {
-font-size: 15px;
+font-size: 12px;
 margin: 3px 0; /* Змінюємо margin для li */
 margin-top: 15px;
 list-style: none; 
 }
     
-/* breadcrumb */
-.breadcrumb {
-  display: flex;
-  justify-content: center; /* Додаємо цей рядок для центрування */
-  align-items: center; /* Додаємо цей рядок для центрування */
-  margin-left: 1350px ;
-  background-color: rgba(192, 192, 192, 0.21);
-  border: 3px solid rgb(168, 37, 37);
-  border: 3px solid rgb(168, 37, 37);
-  border-radius: 10px;
-   max-width: 100px;
-}
 
-.breadcrumb-item {
-  text-align: center; /* Додаємо цей рядок для центрування */
-}
+
 
 .breadcrumb a{
   display: inline-block; /* Додаємо цей рядок для центрування */
   padding: 5px 10px;
+  color: white;
 }
+
+.my-text {
+  font-size: 20px;
+}
+
+  /* navigation color*/
+  .nav-item .nav-link {
+   color: white;
+   margin-top: 10px;
+ }
+ .description {
+position: absolute;
+top: 170px; 
+left: 18px;
+z-index: 1;
+font-size: 13px;
+}
+
+/* price */
+.row-container {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .price {
+color: rgb(211, 74, 74);
+font-size: small;
+bottom: 1px;
+position: absolute;
+
+}
+ @media (max-width: 768px) {
+  body {
+            background-size: cover; /* Змінюємо розмір фонового зображення на cover */
+            overflow-x: hidden; /* Забороняє горизонтальний прокрут */
+            background-color: black;
+        }
+           
+  .description {
+                position: absolute; /* Remove absolute positioning for mobile */
+            }
+
+        }
+
+        footer {
+    background-color: rgba(168, 37, 37, 0.396); /* Колір фону підпису */
+    color: white; /* Колір тексту підпису */
+    text-align: center; /* Вирівнювання тексту по центру */
+    padding: 10px; /* Передня і задня відступи для підпису */
+    font-size: 12px;
+
+}
+
     </style>
 
 <div class="text-center">
-  <img src="Photo/logostandart-no-bg 1.png" alt="logo_black" width="125" height="140">
+  <img src="Photo/logostandart-no-bg 1.png" alt="logo_black" width="100" height="115">
 </div>
 
 <ul class="nav nav-tabs justify-content-center">
@@ -72,9 +114,11 @@ list-style: none;
       <li><a class="dropdown-item font2" href="menu_rolls.html">Ролли та макі</a></li>
       <li><a class="dropdown-item font2" href="menu_hot_rolls.html">Гарячі ролли</a></li> 
       <li><a class="dropdown-item font2" href="menu_wok.html">Вок меню(рис, локшина)</a></li>
-      <li><a class="dropdown-item font2" href="menu_soups_snack.html">Супи та закуски</a></li>
+      <li><a class="dropdown-item font2" href="menu_soups_lunch_boxes.html">Супи та ланч-бокси</a></li>
       <li><a class="dropdown-item font2" href="menu_sushi_burgers.html">Суші-бургери, Фірмовий Ролл</a></li> 
-      <li><a class="dropdown-item font2" href="menu_poke_bowl_bao.html">Поке-боул та Бао</a></li> 
+      <li><a class="dropdown-item font2" href="menu_poke_bowl_bao.html">Поке-боул, Бао та салати</a></li> 
+      <li><a class="dropdown-item font2" href="menu_hot_snacks.html">Гарячі закуски</a></li> 
+
     </ul>
   </li>
   <li class="nav-item">
@@ -93,7 +137,7 @@ list-style: none;
  
 <div class="container font1">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/phila_classic.jpg" alt="phila_classic">
         <div class="menu-item-text">
@@ -104,7 +148,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description"> 
-          <p><strong>8 шматочків| 240 г. | <span class="price">160 грн</span> </strong></p>
+          <p><strong>8 шматочків| 240 г. | </strong></p>
+          <p> <strong class="price" >160 грн</strong></p>
         </div>
         </div>
         </div>
@@ -112,7 +157,7 @@ list-style: none;
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/phila_avocado.jpg" alt="phila_avocado ">
         <div class="menu-item-text">
@@ -123,7 +168,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description">
-          <p> <strong>8 шматочків| 260 г. | <span class="price">170 грн</span> </strong></p>
+          <p> <strong>8 шматочків| 260 г. |  </strong></p>
+          <p> <strong class="price" >170 грн</strong></p>
           </div>
           </div>
         </div>
@@ -131,7 +177,7 @@ list-style: none;
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/phila_eel.jpg" alt="phila_eel ">
         <div class="menu-item-text">
@@ -142,7 +188,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description">
-          <p> <strong>8 шматочків| 270 г. | <span class="price">200 грн</span></strong></p>
+          <p> <strong>8 шматочків| 270 г. | </strong></p>
+          <p> <strong class="price" >200 грн</strong></p>
           </div>
         </div>
           </div>
@@ -156,7 +203,7 @@ list-style: none;
 
 <div class="container font1">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/canadian_roll.jpg" alt="canadian_roll">
         <div class="menu-item-text">
@@ -167,7 +214,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description"> 
-          <p><strong>8 шматочків| 240 г. | <span class="price">175 грн</span> </strong></p>
+          <p><strong>8 шматочків| 240 г. | </strong></p>
+          <p> <strong class="price" >175 грн</strong></p>
         </div>
         </div>
         </div>
@@ -175,7 +223,7 @@ list-style: none;
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/phila_shrimp_spicy.jpg" alt="phila_shrimp_spicy ">
         <div class="menu-item-text">
@@ -186,7 +234,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description">
-          <p> <strong>8 шматочків| 260 г. | <span class="price">180 грн</span> </strong></p>
+          <p> <strong>8 шматочків| 260 г. | </strong></p>
+          <p> <strong class="price" >180 грн</strong></p>
           </div>
           </div>
         </div>
@@ -194,7 +243,7 @@ list-style: none;
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/california_salmon_tobika.jpg" alt="california_salmon_tobika ">
         <div class="menu-item-text">
@@ -205,7 +254,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description">
-          <p> <strong>8 шматочків| 240 г. | <span class="price">160 грн</span></strong></p>
+          <p> <strong>8 шматочків| 240 г. | </strong></p>
+          <p> <strong class="price" >160 грн</strong></p>
           </div>
         </div>
           </div>
@@ -219,7 +269,7 @@ list-style: none;
 
 <div class="container font1">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/california_tuna_tobika.jpg" alt="california_tuna_tobika">
         <div class="menu-item-text">
@@ -230,7 +280,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description"> 
-          <p><strong>8 шматочків| 220 г. | <span class="price">140 грн</span> </strong></p>
+          <p><strong>8 шматочків| 220 г. |</strong></p>
+          <p> <strong class="price" >140 грн</strong></p>
         </div>
         </div>
         </div>
@@ -238,7 +289,7 @@ list-style: none;
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/california_salmon_sesame.jpg" alt="california_salmon_sesame ">
         <div class="menu-item-text">
@@ -249,7 +300,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description">
-          <p> <strong>8 шматочків| 230 г. | <span class="price">150 грн</span> </strong></p>
+          <p> <strong>8 шматочків| 230 г. |  </strong></p>
+          <p> <strong class="price" >150 грн</strong></p>
           </div>
           </div>
         </div>
@@ -257,7 +309,7 @@ list-style: none;
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/cheese_roll.jpg" alt="cheese_roll ">
         <div class="menu-item-text">
@@ -268,7 +320,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description">
-          <p> <strong>6 шматочків| 225 г. | <span class="price">120 грн</span></strong></p>
+          <p> <strong>6 шматочків| 225 г. | </strong></p>
+          <p> <strong class="price" >120 грн</strong></p>
           </div>
         </div>
           </div>
@@ -281,7 +334,7 @@ list-style: none;
 
 <div class="container font1">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/green_dragon.jpg" alt="green_dragon">
         <div class="menu-item-text">
@@ -292,7 +345,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description"> 
-          <p><strong>8 шматочків| 280 г. | <span class="price">280 грн</span> </strong></p>
+          <p><strong>8 шматочків| 280 г. |  </strong></p>
+          <p> <strong class="price" >280 грн</strong></p>
         </div>
         </div>
         </div>
@@ -300,18 +354,19 @@ list-style: none;
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/volcano_salmon.jpg" alt="volcano_salmon ">
         <div class="menu-item-text">
           <h4>Вулкан тар-тар лосось</h4>
           <div class="font2">
           <ul>
-            <li style="font-size: 14px;">Норі, рис, сир філадельфія, авокадо, огірок, тар-тар лосося, тобіка японський майонез spicy, соус солодкий соєвий, кунжут <li>
+            <li style="font-size: 12px;">Норі, рис, сир філадельфія, авокадо, огірок, тар-тар лосося, тобіка японський майонез spicy, соус солодкий соєвий, кунжут <li>
           </ul>
           <div class="row-container">
           <div class="description">
-          <p> <strong>6 шматочків| 250 г. | <span class="price">160 грн</span> </strong></p>
+          <p> <strong>6 шматочків| 250 г. | </strong></p>
+          <p> <strong class="price" >160 грн</strong></p>
           </div>
           </div>
         </div>
@@ -319,18 +374,19 @@ list-style: none;
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/akita_roll.jpg" alt="set_mix ">
         <div class="menu-item-text">
           <h4>Ролл Акіта </h4>
           <div class="font2">
           <ul>
-            <li style="font-size: 14px;">Норі, рис, сир філадельфія, вугор, тобіка, сніжний spicy краб, японський майонез, соус солодкий соєвий, кунжут</li>
+            <li style="font-size: 12px;">Норі, рис, сир філадельфія, вугор, тобіка, сніжний spicy краб, японський майонез, соус солодкий соєвий, кунжут</li>
           </ul>
           <div class="row-container">
           <div class="description">
-          <p> <strong>8 шматочків| 250 г. | <span class="price">200 грн</span></strong></p>
+          <p> <strong>8 шматочків| 250 г. | </strong></p>
+          <p> <strong class="price" >200 грн</strong></p>
           </div>
         </div>
           </div>
@@ -344,18 +400,19 @@ list-style: none;
 
 <div class="container font1">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/green_roll.jpg" alt="green_roll">
         <div class="menu-item-text">
           <h4>Green Roll</h4>
           <div class="font2">
             <ul>
-            <li style="font-size: 14px;">Норі, рис, сир філадельфія, креветки темпура, огірок, авокадо, салат чука, японський майонез spicy, соус унагі, кунжут</li>
+            <li style="font-size: 12px;">Норі, рис, сир філадельфія, креветки темпура, огірок, авокадо, салат чука, японський майонез spicy, соус унагі, кунжут</li>
           </ul>
           <div class="row-container">
           <div class="description"> 
-          <p><strong>8 шматочків| 280 г. | <span class="price">190 грн</span> </strong></p>
+          <p><strong>8 шматочків| 280 г. |  </strong></p>
+          <p> <strong class="price" >190 грн</strong></p>
         </div>
         </div>
         </div>
@@ -363,7 +420,7 @@ list-style: none;
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/sensei_roll.jpg" alt="sensei_roll ">
         <div class="menu-item-text">
@@ -374,7 +431,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description">
-          <p> <strong>8 шматочків| 280 г. | <span class="price">190 грн</span> </strong></p>
+          <p> <strong>8 шматочків| 280 г. |  </strong></p>
+          <p> <strong class="price" >190 грн</strong></p>
           </div>
           </div>
         </div>
@@ -382,7 +440,7 @@ list-style: none;
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/harakiri_roll.jpg" alt="harakiri_roll ">
         <div class="menu-item-text">
@@ -393,7 +451,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description">
-          <p> <strong>8 шматочків| 260 г. | <span class="price">220 грн</span></strong></p>
+          <p> <strong>8 шматочків| 260 г. | </strong></p>
+          <p> <strong class="price" >220 грн</strong></p>
           </div>
         </div>
           </div>
@@ -407,7 +466,7 @@ list-style: none;
 
 <div class="container font1">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/ebi_tempura.jpg" alt="ebi_tempura">
         <div class="menu-item-text">
@@ -418,7 +477,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description"> 
-          <p><strong>8 шматочків| 250 г. | <span class="price">160 грн</span> </strong></p>
+          <p><strong>8 шматочків| 250 г. | </strong></p>
+          <p> <strong class="price" >160 грн</strong></p>
         </div>
         </div>
         </div>
@@ -426,7 +486,7 @@ list-style: none;
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/big_salmon.jpg" alt="big_salmon ">
         <div class="menu-item-text">
@@ -437,7 +497,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description">
-          <p> <strong>8 шматочків| 270 г. | <span class="price">180 грн</span> </strong></p>
+          <p> <strong>8 шматочків| 270 г. | </strong></p>
+          <p> <strong class="price" >180 грн</strong></p>
           </div>
           </div>
         </div>
@@ -445,18 +506,19 @@ list-style: none;
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/sakura_roll.jpg" alt="sakura_roll ">
         <div class="menu-item-text">
           <h4>Ролл Сакура </h4>
           <div class="font2">
           <ul>
-            <li style="font-size: 14px;">Норі, рис, сир філадельфія, авокадо, тобіка, лосось, сніжний краб, японський майонез spicy, соус унагі, кунжут</li>
+            <li style="font-size: 12px;">Норі, рис, сир філадельфія, авокадо, тобіка, лосось, сніжний краб, японський майонез spicy, соус унагі, кунжут</li>
           </ul>
           <div class="row-container">
           <div class="description">
-          <p> <strong>8 шматочків| 300 г. | <span class="price">220 грн</span></strong></p>
+          <p> <strong>8 шматочків| 300 г. |</strong></p>
+          <p> <strong class="price" >220 грн</strong></p>
           </div>
         </div>
           </div>
@@ -470,7 +532,7 @@ list-style: none;
 
 <div class="container font1">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/three_fish_roll.jpg" alt="three_fish_roll">
         <div class="menu-item-text">
@@ -481,7 +543,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description"> 
-          <p><strong>8 шматочків| 265 г. | <span class="price">210 грн</span> </strong></p>
+          <p><strong>8 шматочків| 265 г. |  </strong></p>
+          <p> <strong class="price" >210 грн</strong></p>
         </div>
         </div>
         </div>
@@ -489,18 +552,19 @@ list-style: none;
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/grill_roll.jpg" alt="grill_roll ">
         <div class="menu-item-text">
           <h4>Grill Roll</h4>
           <div class="font2">
           <ul>
-            <li style="font-size: 14px;">Норі, рис, сир філадельфія, смажений лосось теріякі, грильований лосось, огірок, соус sweet chili, зелена цибуля, кунжут<li>
+            <li style="font-size: 12px;">Норі, рис, сир філадельфія, смажений лосось теріякі, грильований лосось, огірок, соус sweet chili, зелена цибуля, кунжут<li>
           </ul>
           <div class="row-container">
           <div class="description">
-          <p> <strong>8 шматочків| 250 г. | <span class="price">170 грн</span> </strong></p>
+          <p> <strong>8 шматочків| 250 г. | </strong></p>
+          <p> <strong class="price" >170 грн</strong></p>
           </div>
           </div>
         </div>
@@ -518,7 +582,7 @@ list-style: none;
 
 <div class="container font1">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/maki_chuka_algae.jpg" alt="maki_chuka_algae">
         <div class="menu-item-text">
@@ -529,7 +593,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description"> 
-          <p><strong>6 шматочків| 130 г. | <span class="price">80 грн</span> </strong></p>
+          <p><strong>6 шматочків| 130 г. |  </strong></p>
+          <p> <strong class="price" >80 грн</strong></p>
         </div>
         </div>
         </div>
@@ -537,7 +602,7 @@ list-style: none;
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/maki_snow_crab.jpg" alt="maki_snow_crab ">
         <div class="menu-item-text">
@@ -548,7 +613,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description">
-          <p> <strong>6 шматочків| 135 г. | <span class="price">90 грн</span> </strong></p>
+          <p> <strong>6 шматочків| 135 г. | </strong></p>
+          <p> <strong class="price" >90 грн</strong></p>
           </div>
           </div>
         </div>
@@ -556,7 +622,7 @@ list-style: none;
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/maki_tuna.jpg" alt="maki_tuna ">
         <div class="menu-item-text">
@@ -568,7 +634,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description">
-          <p> <strong>6 шматочків| 130 г. | <span class="price">100 грн</span></strong></p>
+          <p> <strong>6 шматочків| 130 г. | </strong></p>
+          <p> <strong class="price" >100 грн</strong></p>
           </div>
         </div>
           </div>
@@ -581,7 +648,7 @@ list-style: none;
 
 <div class="container font1">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/maki_cucumber.jpg" alt="maki_cucumber">
         <div class="menu-item-text">
@@ -592,7 +659,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description"> 
-          <p><strong>6 шматочків| 110 г. | <span class="price">60 грн</span> </strong></p>
+          <p><strong>6 шматочків| 110 г. |  </strong></p>
+          <p> <strong class="price" >60 грн</strong></p>
         </div>
         </div>
         </div>
@@ -600,7 +668,7 @@ list-style: none;
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/maki_avocado.jpg" alt="maki_avocado ">
         <div class="menu-item-text">
@@ -611,7 +679,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description">
-          <p> <strong>6 шматочків| 110 г. | <span class="price">70 грн</span> </strong></p>
+          <p> <strong>6 шматочків| 110 г. | </strong></p>
+          <p> <strong class="price" >110 грн</strong></p>
           </div>
           </div>
         </div>
@@ -619,7 +688,7 @@ list-style: none;
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/maki_salmon.jpg" alt="maki_salmon ">
         <div class="menu-item-text">
@@ -630,7 +699,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description">
-          <p> <strong>6 шматочків| 130 г. | <span class="price">100 грн</span></strong></p>
+          <p> <strong>6 шматочків| 130 г. | </strong></p>
+          <p> <strong class="price" >100 грн</strong></p>
           </div>
         </div>
           </div>
@@ -644,7 +714,7 @@ list-style: none;
 
 <div class="container font1">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/maki_eel.jpg" alt="maki_eel">
         <div class="menu-item-text">
@@ -655,7 +725,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description"> 
-          <p><strong>6 шматочків| 125 г. | <span class="price">110 грн</span> </strong></p>
+          <p><strong>6 шматочків| 125 г. |  </strong></p>
+          <p> <strong class="price" >110 грн</strong></p>
         </div>
         </div>
         </div>
@@ -672,7 +743,7 @@ list-style: none;
 
 <div class="container font1">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/roll_without_rice_salmon.jpg" alt="maki_cucumber">
         <div class="menu-item-text">
@@ -683,7 +754,8 @@ list-style: none;
           </ul>
           <div class="row-container">
           <div class="description"> 
-          <p><strong>6 шматочків| 125 г. | <span class="price">140 грн</span> </strong></p>
+          <p><strong>6 шматочків| 125 г. |  </strong></p>
+          <p> <strong class="price" >140 грн</strong></p>
         </div>
         </div>
         </div>
@@ -691,18 +763,19 @@ list-style: none;
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="menu-item mb-4">
         <img src="Photo/rolls_and_maki/roll_without_rice_shrimp.jpg" alt="maki_avocado ">
         <div class="menu-item-text">
           <h4>Ролл з креветкою та крабом</h4>
           <div class="font2">
           <ul>
-            <li>Рисовий папір, сир філадельфія, огірок, авокадо, креветки, ікра тобіко, сніжний краб, лист салату, унагі соус, кунжут<li>
+            <li style="font-size: 12px;">Рисовий папір, сир філадельфія, огірок, авокадо, креветки, ікра тобіко, сніжний краб, лист салату, унагі соус, кунжут<li>
           </ul>
           <div class="row-container">
           <div class="description">
-          <p> <strong>6 шматочків| 125 г. | <span class="price">150 грн</span> </strong></p>
+          <p> <strong>6 шматочків| 125 г. | </strong></p>
+          <p> <strong class="price" >150 грн</strong></p>
           </div>
           </div>
         </div>
@@ -715,12 +788,12 @@ list-style: none;
   </div>
 </div>
 
-<!--  Breadcrumb  -->
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-  <li class="breadcrumb-item "><a href="#">Вгору</a></li>
-  </ol>
- </nav>
+
+
+
+ <footer>
+  &copy; HotWok 2023 Всі права захищені.
+</footer>
 
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
