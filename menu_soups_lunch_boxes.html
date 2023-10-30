@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+ <title>Hot Wok Cупи та закуски</title>
+ <link rel="icon" href="Photo/icon.png" type="image/x-icon">
+
+ <!--bootstrap-->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+crossorigin="anonymous">
+
+<!--font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+
+<!--connect css-->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+ </head>
+
+ <body>
+
+  <style>
+    body {
+      background-color: black;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-attachment: fixed;
+    }
+    
+    .font1 {
+      font-family: 'Lobster', cursive;
+      font-size: 30px;
+      color: white;
+    }
+    
+    .font2 {
+      font-family: 'Montserrat Alternates', sans-serif;
+      font-size: 14px;
+      line-height: 1.2;
+    }
+    
+    .my-text {
+      color: white;
+      text-shadow: -1px 0 rgb(168, 37, 37), 0 1px rgb(168, 37, 37), 1px 0 rgb(168, 37, 37), 0 -1px rgb(168, 37, 37);
+      display: inline-block;
+      border: 1px solid rgb(168, 37, 37);
+      padding: 5px;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+      box-sizing: border-box;
+      background-color: rgb(168, 37, 37);
+      margin-top: 40px;
+      font-size: 19px;
+    }
+    
+    .column-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    
+    .column1 {
+      flex-basis: 35%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 4px solid rgb(168, 37, 37);
+      border-radius: 25px;
+      margin-top: 40px;
+      color: white;
+      font-size: 22px;
+      height: 200px;
+      text-align: center;
+      margin-left: 45px;
+    }
+    
+    .column2 {
+      flex-basis: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 4px solid rgb(168, 37, 37);
+      border-radius: 25px;
+      margin-top: 40px;
+      color: white;
+      font-size: 18px;
+      height: 200px;
+      text-align: center;
+      margin-right: 45px;
+    }
+    
+    .image-wrapper {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    
+    .image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .gray-background {
+      background-color: rgba(192, 192, 192, 0.21); 
+      height: 200px;
+    }
+    
+    .text {
+      margin-top: 15px; 
+      font-size: 15px;
+    }
+
+    .text p{
+font-size: 15px;
+    }
+    
+   
+    
+      /* navigation color*/
+ .nav-item .nav-link {
+   color: white;
+   margin-top: 10px;
+ }
+
+    /*breadcrumb */
+.breadcrumb {
+  display: flex;
+  justify-content: center; /* Додаємо цей рядок для центрування */
+  align-items: center; /* Додаємо цей рядок для центрування */
+  margin-left: 1350px ;
+  background-color: rgba(192, 192, 192, 0.21);
+  border: 3px solid rgb(168, 37, 37);
+  border-radius: 10px;
+   max-width: 100px;
+   margin-top: 10px;
+}
+
+.breadcrumb-item {
+  text-align: center; /* Додаємо цей рядок для центрування */
+  
+}
+
+.breadcrumb a{
+  display: inline-block; /* Додаємо цей рядок для центрування */
+  padding: 5px 10px;
+}
+
+/* marks */
+
+.row-container.product {
+  display: flex;
+  align-items: center; /* Вирівняйте елементи по вертикалі по центру */
+  max-width: 220px;
+
+}
+
+.marks {
+  vertical-align: middle; /* Вирівняйте зображення по вертикалі */
+  margin-left: 5px;
+}
+
+.price {
+color: rgb(211, 74, 74);
+font-size: 17px;
+}
+
+.description {
+position: absolute;
+top: 170px; 
+left: 18px;
+z-index: 1;
+font-size: 13px;
+}
+
+/* price */
+.row-container {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .price {
+color: rgb(211, 74, 74);
+font-size: 15px;
+bottom: 1px;
+
+}
+
+.menu-item-text li {
+font-size: 13px;
+margin: 3px 0; /* Змінюємо margin для li */
+margin-top: 15px;
+list-style: none; 
+}
+@media (max-width: 768px) {
+        body {
+            background-size: cover; /* Змінюємо розмір фонового зображення на cover */
+            overflow-x: hidden; /* Забороняє горизонтальний прокрут */
+
+        }
+
+        .font1 {
+            font-size: 20px; /* Зменшуємо розмір шрифту для заголовку */
+        }
+
+        .font2 {
+            font-size: 12px; /* Зменшуємо розмір шрифту для тексту */
+        }
+
+        .my-text {
+            font-size: 16px; /* Зменшуємо розмір шрифту для текстового блоку */
+            
+        }
+
+
+        .column-container {
+            flex-direction: column; /* Змінюємо напрямок стовпців на вертикальний */
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px; /* Ваші існуючі стилі */
+        }
+
+        .column1 {
+            flex-basis: 100%; /* Розширюємо стовпці на весь екран */
+            margin: 0; /* Знімаємо зовнішні відступи */
+            text-align: center; /* Центруємо текст у стовпцях */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+         .column2{
+            flex-basis: 100%; /* Розширюємо стовпці на весь екран */
+            margin: 0; /* Знімаємо зовнішні відступи */
+            text-align: center; /* Центруємо текст у стовпцях */
+            margin-top: 10px;
+            padding-bottom: 10px;
+         }
+    }
+
+    
+    footer {
+    background-color: rgba(168, 37, 37, 0.396); /* Колір фону підпису */
+    color: white; /* Колір тексту підпису */
+    text-align: center; /* Вирівнювання тексту по центру */
+    padding: 10px; /* Передня і задня відступи для підпису */
+    font-size: 12px;
+
+}
+
+ 
+    </style>
+
+ <div class="text-center">
+  <img src="Photo/logostandart-no-bg 1.png" alt="logo_black" width="100" height="115">
+</div>
+
+<ul class="nav nav-tabs justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active font2" aria-current="page" href="main_page.html">Головна сторінка</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle font2" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Меню</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item font2" href="menu_sets.html">Сети</a></li>
+      <li><a class="dropdown-item font2" href="menu_rolls.html">Ролли та макі</a></li>
+      <li><a class="dropdown-item font2" href="menu_hot_rolls.html">Гарячі ролли</a></li> 
+      <li><a class="dropdown-item font2" href="menu_wok.html">Вок меню(рис, локшина)</a></li>
+      <li><a class="dropdown-item font2" href="menu_soups_lunch_boxes.html">Супи та ланч-бокси</a></li>
+      <li><a class="dropdown-item font2" href="menu_sushi_burgers.html">Суші-бургери, Фірмовий Ролл</a></li> 
+      <li><a class="dropdown-item font2" href="menu_poke_bowl_bao.html">Поке-боул, Бао та салати</a></li>
+      <li><a class="dropdown-item font2" href="menu_hot_snacks.html">Гарячі закуски</a></li> 
+ 
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link font2" href="sales.html">Акції</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link font2" href="delivery.html">Доставка</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link font2" href="about.html">Про нас</a>
+  </li>
+</ul>
+
+<!--Супи-->
+<h1 class="my-text font1">Супи</h1>
+<h1 class="my-text font1" style="font-size: 18px; background-color: rgba(89, 27, 27, 0.649);">Суп Том Ям з морепродуктами
+  <img src="Photo/hot_seafood_pict/pepper.png" alt="pepper" class="marks">
+</h1>
+
+<div class="column-container">
+  <div class="column1">
+    <div class="image-wrapper">
+      <img src="Photo/lunch_boxes_soups/soup_tom_kha.jpg" alt="soup_tom_kha">
+    </div>
+  </div>
+  <div class="column2 gray-background font2">
+    <p class="text">Бульйон на основі креветок (рибний бульйон, імбир, часник, кефір лайму, 
+      галангал, лемонграсс, чілі), кревтка, восьминіг, лосось, гриби печериці, помідор, кокосове молоко,
+       паста том ям, рис, чілі, перець, лайм, зелена цибуля, кунжут</p>
+       <p style="font-size: 13px;"> Вихід: 450 г.</p>
+       <p>Ціна:  <span class="price"><strong> 250 грн. </span> </strong></p>
+     </div>
+   </div>
+
+<h1 class="my-text font1" style="font-size: 18px; background-color: rgba(89, 27, 27, 0.649);">Суп Том Ям
+  <img src="Photo/hot_seafood_pict/pepper.png" alt="pepper" class="marks">
+</h1>
+
+<div class="column-container">
+  <div class="column1">
+    <div class="image-wrapper">
+      <img src="Photo/lunch_boxes_soups/soup_tom_yam.jpg" alt="soup_tom_yam">
+    </div>
+  </div>
+  <div class="column2 gray-background font2">
+    <p class="text">Бульйон на основі креветок (рибний бульйон, імбир, часник, кефір лайму, 
+      галангал, лемонграсс, чілі), креветки/лосось, гриби печериці, помідор, кокосове молоко,
+       паста том ям, рис, чілі, перець, лайм, зелена цибуля, кунжут</p>
+    <p style="font-size: 13px;"> Вихід: 420 г.</p>
+    <p>З креветками- <span class="price"><strong> 200 грн.</strong> </span>  | З лососем- <span class="price"><strong> 180 грн.</strong></span></p>
+  </div>
+</div>
+
+<h1 class="my-text font1" style="font-size: 18px; background-color: rgba(89, 27, 27, 0.649);">Рамен</h1>
+
+<div class="column-container">
+  <div class="column1">
+    <div class="image-wrapper">
+      <img src="Photo/lunch_boxes_soups/soup_ramen_beef_chicken.jpg" alt="soup_ramen_beef_chicken">
+    </div>
+  </div>
+  <div class="column2 gray-background font2">
+    <p class="text" style="margin-top: 35px;"> Бульйон, яловичина/курочка, удон, яйце перепилине, зелена цибуля, кунжут</p>
+    <p style="font-size: 13px;"> Вихід: 400 г.</p>
+    <p>З яловичиною- <span class="price"><strong> 140 грн. </strong></span>  | З курочкою- <span class="price"><strong>125 грн.</strong> </span></p>
+  </div>
+</div>
+
+
+<h1 class="my-text font1" style="font-size: 18px; background-color: rgba(89, 27, 27, 0.649);">Місо суп</h1>
+
+<div class="column-container">
+  <div class="column1">
+    <div class="image-wrapper">
+      <img src="Photo/lunch_boxes_soups/miso_soup_classic.jpg" alt="miso_soup_classic">
+    </div>
+  </div>
+  <div class="column2 gray-background font2">
+    <p class="text" style="margin-top: 35px;">Місо бульйон, водорості вакаме, сир тофу, рис, зелена цибуля, кунжут. З тофу та лососем + лосось, соус кім чи</p>
+    <p>З тофу <span class="price"><strong> 80 грн. </strong></span>  | З тофу та лососем <span class="price"><strong>110 грн.</strong> </span></p>
+    <p style="font-size: 13px;">З тофу-  вихід: 370 г.| З тофу та лососем-   вихід: 420 г.</p>
+  </div>
+</div>
+
+
+<!--Закуски-->
+<h1 class="my-text font1">Ланч-бокси</h1>
+
+<div class="container font1">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="menu-item mb-4">
+        <img src="Photo/lunch_boxes_soups/lunch_box_ramen.png" alt="lunch_box_ramen">
+        <div class="menu-item-text">
+          <h4>Ланч-бокс з раменом та рисом</h4>
+          <div class="font2">
+            <ul>
+            <li>Суп рамен, смажений рис з курочкою та капустою кім чі, 0.5 пепсі/mirinda/7up </li>
+          </ul>
+          <div class="row-container">
+          <div class="description"> 
+            <p> <strong class="price" >180 грн</strong></p>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="menu-item mb-4">
+        <img src="Photo/lunch_boxes_soups/lunch_box_miso.png" alt="lunch_box_miso ">
+        <div class="menu-item-text">
+          <h4>Ланч-бокс з місо та рисом</h4>
+          <div class="font2">
+          <ul>
+            <li>Суп місо з тофу, рис з овочами, 0.5 пепсі/mirinda/7up </li>
+          </ul>
+          <div class="row-container">
+          <div class="description">
+            <p> <strong class="price" >150 грн</strong></p>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  &copy; HotWok 2023 Всі права захищені.
+</footer>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+crossorigin="anonymous"></script>
+
+ </body>
+
+</html>
