@@ -4,67 +4,12 @@ body {
    background-size: 100% 100%;
    background-attachment: fixed;
    
+
 }
 
-/* Centering for the main page*/
-.center-text {
-   text-align: center;
-}
-.row.text-center {
-   justify-content: center;
-}
-
-/* color when hovering*/
-.nav-link {
-   color: white;
-}
-.breadcrumb .breadcrumb-item a {
-   color: white;
-}
-.nav-item .nav-link:hover {
-   color:  rgb(168, 37, 37);
-}
-.nav-item.dropdown .nav-link.dropdown-toggle:focus,
-.nav-item.dropdown .nav-link.dropdown-toggle:hover {
-    background-color: rgb(168, 37, 37);
-    color: white;
-}
-
-/* navigation color*/
- .nav-item .nav-link {
-   color: white;
- }
-
-
-/*main page, text size*/
-.text-xxl-center.font1 {
-   font-size: 40px;
-}
-.text-xl-center.font1 {
-   font-size: 25px;
-}
-.text-bigger.font1 {
-   font-size: 20px;
-}
-
-
-/*Headline on the main page */
-.red-marker {
-   background-color: rgb(168, 37, 37);
-   color: white;
-   padding: 2px 5px;
-   border-radius: 20px;
-   display: inline-block;
- }
- 
  
 /*menu styles */
-body {
-   background-image: url('Photo/bg1.png');
-   background-repeat: no-repeat;
-   background-size: 100% 100%;
-   background-attachment: fixed;
- }
+
  
  .font1 {
    font-family: 'Lobster', cursive;
@@ -74,11 +19,11 @@ body {
  
  .font2 {
    font-family: 'Montserrat Alternates', sans-serif;
-   font-size: 14px;
+   font-size: 12px;
    line-height: 1.2;
   flex-direction: column;
  }
-
+ 
 
  /*menu */
  .my-text {
@@ -141,24 +86,4 @@ flex-wrap: wrap;
 margin: 0; /* Додали внутрішні відступи для ul */
 
 }
-
-.description {
-position: absolute;
-top: 170px; 
-left: 18px;
-z-index: 1;
-font-size: 13px;
-}
-
-/* price */
-.row-container {
-   display: flex;
-   justify-content: space-between;
- }
-
- .price {
-color: rgb(211, 74, 74);
-font-size: small;
-}
-
 
